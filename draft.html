@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наша почта</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/jquery.stellar.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <div class="body-layout">
+            <nav class="clearfix">
+                <div class="logo"><a href="/"><img src="img/design/logo.png" width="41" height="38" alt=""/></a></div>
+                <div class="mobile_item"><span class="icon icon-burger"></span></div>
+                <ul class="nav-list clearfix">
+                    <li class="nav-item"><a class="nav-link" href="#">Частным клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Бизнес-клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tracking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Отделения</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#">О компании</a></li>-->
+                </ul>
+            </nav>
+            <div class="authorized">
+                <div class="authorized__login">
+                    <span class="authorized__login-ttl"><a href="#" class="authorized__login-link">Грицюк Юлия</a></span>
+                </div>
+                <div class="authorized__exit">
+                    <span class="icon icon-log_out_3"></span>
+                    <span class="authorized__exit-ttl"><a href="#" class="authorized__exit-link">Выход</a></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="draftheading">
+            <!--<img class="main-img__w" src="img/content/main_img.jpg" alt=""/>-->
+            <menu class="menu">
+                <div class="body-layout">
+                    <div class="menu__ttl">Личный кабинет</div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" data-scroll="point_1" href="#">Мои накладные</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link" data-scroll="point_2" href="#">Архив</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link" data-scroll="point_3" href="#">Мои данные</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link" data-scroll="point_4" href="#">Вызвать курьера</a></li>
+                    </ul>
+                </div>
+            </menu>
+        </div>
+        <section class="dashboard">
+            <div class="body-layout">
+                <div class="heading-frm">
+                    <div class="user-status">
+                        <div class="user-status__type">
+                            <p class="user-status--name">Все</p>
+                            <div class="user-status__type--select"></div>
+                        </div>
+                        <div class="user-status__type">
+                            <p class="user-status--name">Я Получатель</p>
+                            <div class="user-status__type--select"></div>
+                        </div>
+                        <div class="user-status__type">
+                            <p class="user-status--name">Я Отправитель</p>
+                            <div class="user-status__type--select"></div>
+                        </div>
+                    </div>
+                    <div class="b-input-search draft-inpt"><input type="text" placeholder="Поиск по номеру накладной"><span class="icon icon-magnifier_2"></span></div>
+                </div>
+                <div class="dashboard__area clearfix">
+                    <div class="address-info address-centring address-info__sending">
+                        <div class="address-info__head address-info__head--padt">
+                            <div class="address-info__head--icon">
+                                <span class="icon-map_2 map_2-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts">
+                                <div class="address-info__head--number">
+                                    № 12345678
+                                </div>
+                                <h2 class="address-info__head--name">Гомель - Минск</h2>
+                            </div>
+                        </div>
+                        <div class="address-info__head">
+                            <div class="address-info__head--icon man-pos">
+                                <span class="icon-play over-stl"></span>
+                                <span class="icon-man_2 map_2-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts">
+                                <div class="address-info__tittle--style address-info__tittle--style-marg">
+                                    <span class="address-info__tittle--style-sr">Отправитель</span>
+                                    Вы: Грицюк Юлия
+                                </div>
+                                <div class="sending-form__text">
+                                    Гомель - 03
+                                </div>
+                                <div class="sending-form__text--d sending-form__text-marg">
+                                    <span class="sending-form__text-sr">Дата отправки</span>
+                                    15.12.2015 в 9.30
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__head">
+                            <div class="address-info__head--icon man-pos">
+                                <span class="icon-flag_4 over-stl flg-stl"></span>
+                                <span class="icon-man_2 map_2-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts">
+                                <div class="address-info__tittle--style address-info__tittle--style-marg">
+                                    <span class="address-info__tittle--style-sr">Получатель</span>
+                                    Кириченко Алексей
+                                </div>
+                                <div class="sending-form__text">
+                                    Минск
+                                    <span class="sending-form__text-sr">(до двери)</span>
+                                </div>
+                                <div class="sending-form__text--d sending-form__text-marg">
+                                    <span class="sending-form__text-sr">Дата доставки</span>
+                                    19.12.2015
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__plus address-info__head--padt address-info__head--padb">
+                            <div class="sending-form__text sending-form__text-marg">
+                                <span class="sending-form__text-sr">16.12.2015 в 9:30</span>
+                            </div>
+                            <div class="address-info__tittle--style address-info__tittle--style-marg gar-stl">
+                                На складе
+                            </div>
+                            <div class="sending-form__text">
+                                Гомель - 03
+                            </div>
+                        </div>
+                        <div class="address-info__head cargo-style">
+                            <div class="sending-form__text">
+                                <span class="sending-form__text-sr">Грузовых мест</span>
+                                <div class="address-info__tittle--style">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__head">
+                            <div class="address-info__head--contacts">
+                                <div class="cargo-adds">
+                                    <span class="icon-refresh_2"></span>
+                                    Наложенный платеж
+                                </div>
+                                <div class="cargo-adds">
+                                    <span class="icon-undo_2"></span>
+                                    Обратная доставка тары
+                                </div>
+                                <div class="cargo-adds">
+                                    <span class="icon-checked_2"></span>
+                                    Подтверждение получения
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__redac">
+                            <div class="trash-i">
+                                <span class="icon-trash_2 cargo-icon1"></span>
+                            </div>
+                            <div class="edit-i">
+                                <span class="icon-edit_3 cargo-icon2"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address-info address-centring address-info__sending">
+                        <div class="address-info__head address-info__head--padt">
+                            <div class="address-info__head--icon">
+                                <span class="icon-map_2 map_2-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts">
+                                <div class="address-info__head--number">
+                                    № 12345678
+                                </div>
+                                <h2 class="address-info__head--name">Гомель - Минск</h2>
+                            </div>
+                        </div>
+                        <div class="address-info__head">
+                            <div class="address-info__head--icon man-pos">
+                                <span class="icon-play over-stl"></span>
+                                <span class="icon-man_2 map_2-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts">
+                                <div class="address-info__tittle--style address-info__tittle--style-marg">
+                                    <span class="address-info__tittle--style-sr">Отправитель</span>
+                                    Вы: Грицюк Юлия
+                                </div>
+                                <div class="sending-form__text">
+                                    Гомель - 03
+                                </div>
+                                <div class="sending-form__text--d sending-form__text-marg">
+                                    <span class="sending-form__text-sr">Дата отправки</span>
+                                    15.12.2015 в 9.30
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__head">
+                            <div class="address-info__head--icon man-pos">
+                                <span class="icon-flag_4 over-stl flg-stl"></span>
+                                <span class="icon-man_2 map_2-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts">
+                                <div class="address-info__tittle--style address-info__tittle--style-marg">
+                                    <span class="address-info__tittle--style-sr">Получатель</span>
+                                    Кириченко Алексей
+                                </div>
+                                <div class="sending-form__text">
+                                    Минск
+                                    <span class="sending-form__text-sr">(до двери)</span>
+                                </div>
+                                <div class="sending-form__text--d sending-form__text-marg">
+                                    <span class="sending-form__text-sr">Дата доставки</span>
+                                    19.12.2015
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__plus address-info__head--padt address-info__head--padb">
+                            <div class="sending-form__text sending-form__text-marg">
+                                <span class="sending-form__text-sr">16.12.2015 в 9:30</span>
+                            </div>
+                            <div class="address-info__tittle--style address-info__tittle--style-marg gar-stl">
+                                На складе
+                            </div>
+                            <div class="sending-form__text">
+                                Гомель - 03
+                            </div>
+                        </div>
+                        <div class="address-info__head cargo-style">
+                            <div class="sending-form__text">
+                                <span class="sending-form__text-sr">Грузовых мест</span>
+                                <div class="address-info__tittle--style">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__head">
+                            <div class="address-info__head--contacts">
+                                <div class="cargo-adds">
+                                    <span class="icon-refresh_2"></span>
+                                    Наложенный платеж
+                                </div>
+                                <div class="cargo-adds">
+                                    <span class="icon-undo_2"></span>
+                                    Обратная доставка тары
+                                </div>
+                                <div class="cargo-adds">
+                                    <span class="icon-checked_2"></span>
+                                    Подтверждение получения
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__redac">
+                            <div class="trash-i">
+                                <span class="icon-trash_2 cargo-icon1"></span>
+                            </div>
+                            <div class="edit-i">
+                                <span class="icon-edit_3 cargo-icon2"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer footer-img">
+            <div class="body-layout">
+                <div class="footer-l">
+                    <div class="footer-top">
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Компания</h3></li>
+                            <!--<li class="footer__item"><a class="footer__item-link" href="#">О компании</a></li>-->
+                            <li class="footer__item"><a class="footer__item-link" href="#">Контакты</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Вакансии</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Частным клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как отправить посылку</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Бизнес-клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как стать нашим клиентом</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Плюсы регистрации</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Работа с нами on-line</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Тracking</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Поиск отделений</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Калькулятор</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Мобильное приложение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom clearfix">
+                        <div class="footer-bottom-l clearfix">
+                            <div class="footer-logo"><a href="/"><img src="img/design/logo.png" width="41" height="59" alt=""/></a></div>
+                            <div class="footer-bottom-l__dsc">
+                                <p>
+                                    <strong>ООО “ Наша почта”</strong><br>
+                                    012345, г. Минск,<br>
+                                    ул. (ххх) ххх хх хх<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-bottom-r clearfix">
+                            <div class="footer-bottom-r__dsc">
+                                <p>
+                                    <strong>Поддержка клиентов</strong><br>
+                                    тел.: (ххх) ххх хх хх<br>
+                                    e-mail: nasha_pocta@xxx.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-r">
+                    <div class="feedback">
+                        <form action="">
+                            <h3 class="feedback__ttl">Обратная связь</h3>
+                            <div class="feedback__row feedback__row--first">
+                                <div class="b-input"><input type="text" placeholder="Имя"/></div>
+                                <div class="b-input"><input type="text" placeholder="Телефон"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><input type="text" placeholder="Тема"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><textarea name="" placeholder="Текст"></textarea></div>
+                            </div>
+                             <div class="feedback__btn"><button type="submit" class="feedback__btn-ttl">Отправить</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="js/main.js"></script>
+
+<script>
+    $(document).ready(function() {
+
+
+        // user-status
+
+        $('.user-status__type').click(function() {
+            $('.user-status--name').removeClass('active-user-status');
+            $('.user-status__type--select').removeClass('active-user-type');
+            $('> p', this).addClass('active-user-status');
+            $('> .user-status__type--select', this).addClass('active-user-type');
+        });
+
+
+
+       $('.address-info__sending').mouseover(function() {
+           $('.address-info__redac', this).css({
+               'display' : 'flex'
+           });
+       });
+        $('.address-info__sending').mouseout(function() {
+            $('.address-info__redac', this).css({
+                'display' : 'none'
+            });
+        });
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наша почта</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="css/forms.css" type="text/css"/>
+    <link rel="stylesheet" href="css/ruslan.css" type="text/css"/>
+    <link rel="stylesheet" href="css/media.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+    <link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="body-layout">
+                <nav class="clearfix">
+                    <div class="logo"><a href="/"><img src="img/design/logo.png" width="41" height="38" alt=""/></a></div>
+                    <div class="mobile_item"><span class="icon icon-burger_21"></span></div>
+                    <ul class="nav-list clearfix">
+                        <li class="nav-item"><a class="nav-link" href="#">Частным клиентам</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Бизнес-клиентам</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tracking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Отделения</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
+                    </ul>
+                </nav>
+                <div class="authorization">
+                    <div class="authorization__login">
+                        <span class="icon icon-key_2"></span>
+                        <span class="authorization__login-ttl"><a class="authorization__login-link" href="#">Вход</a></span>
+                    </div>
+                    <div class="authorization__reg">
+                        <span class="authorization__reg-ttl"><a class="authorization__reg-link" href="#">Регистрация</a></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-img main-img--border">
+            <!--<img class="main-img__w" src="img/content/main_img.jpg" alt=""/>-->
+            <img class="main-img__h" src="img/content/main_img.jpg" alt=""/>
+            <menu class="menu">
+                <div class="body-layout">
+                    <div class="menu__ttl">Бизнес-клиентам</div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" data-scroll="point_1" href="#">Основные услуги</a></li>
+                        <li class="menu__item"><a class="menu__link" data-scroll="point_2" href="#">Дополнительные услуги</a></li>
+                        <li class="menu__item"><a class="menu__link" data-scroll="point_3" href="#">Как стать нашим клиентом</a></li>
+                        <li class="menu__item"><a class="menu__link" data-scroll="point_4" href="#">Преимущества для зарегистрированных клиентов</a></li>
+                        <li class="menu__item"><a class="menu__link" data-scroll="point_5" href="#">Отзывы</a></li>
+                    </ul>
+                </div>
+            </menu>
+        </div>
+        <section class="business-customers" data-anchor="point_1">
+            <div class="body-layout">
+                <div class="business-customers__bg"></div>
+                <div class="business-customers__wr clearfix">
+                    <div class="business-customers__box business-customers__box--main-ttl">
+                        <h2 class="business-customers__box-ttl">УСЛУГИ<br>БИЗНЕС-КЛИЕНТАМ</h2>
+                    </div>
+                    <div class="business-customers__box">
+                        <div class="business-customers__num">1</div>
+                        <h3 class="business-customers__box-ttl">Доставка грузов и документов</h3>
+                        <p class="business-customers__box-dsc">Мы предлагаем доставку всех видов отправлений (документов, посылок, грузов, партий товара, паллет).</p>
+                    </div>
+                    <div class="business-customers__box">
+                        <div class="business-customers__num">2</div>
+                        <h3 class="business-customers__box-ttl">Доставка в сети супермаркетов</h3>
+                        <p class="business-customers__box-dsc">Доставка по любому указанному адресу: в сети супермаркетов,<br> в магазин или на склад, в любую точку Белоруссии.</p>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="business-customers__box">
+                        <div class="business-customers__num">3</div>
+                        <h3 class="business-customers__box-ttl">Доставка лично в руки</h3>
+                        <p class="business-customers__box-dsc">Мы доставим отправление только лицу, указанному как Получатель лично в руки.</p>
+                    </div>
+                    <div class="business-customers__box">
+                        <div class="business-customers__num">4</div>
+                        <h3 class="business-customers__box-ttl">Вызов машины</h3>
+                        <p class="business-customers__box-dsc">Вы можете заказать у нас необходимое транспортное<br> средство опод загрузку отправления.</p>
+                    </div>
+                    <div class="business-customers__box">
+                        <div class="business-customers__num">5</div>
+                        <h3 class="business-customers__box-ttl">Наложенный платеж</h3>
+                        <p class="business-customers__box-dsc">После доставки посылки получатель может отправить Вам наложенным платежом указанную стоимость.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="body-layout">
+                <div class="advantages__top">
+                    <h2 class="advantages__ttl">НАШИ ПРЕИМУЩЕСТВА</h2>
+                    <div class="advantages__ttl-line"></div>
+                </div>
+                <div class="advantages__wr clearfix">
+                    <div class="advantages__box clearfix">
+                        <div class="advantages__box-l">
+                            <span class="icon icon-man_2"></span>
+                        </div>
+                        <div class="advantages__box-r">
+                            <h3 class="advantages__box-ttl">Индивидуальный подход</h3>
+                            <p class="advantages__box-dsc">
+                                Разработка индивидуальных решений для
+                                различных сегментов бизнеса, специальные
+                                продукты и дополнительные услуги,
+                                учитывающие отраслевую специфику.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__box clearfix">
+                        <div class="advantages__box-l">
+                            <span class="icon icon-timer_2"></span>
+                        </div>
+                        <div class="advantages__box-r">
+                            <h3 class="advantages__box-ttl">Посылка будет доставлена вовремя</h3>
+                            <p class="advantages__box-dsc">
+                                Мы гарантируем Вам доставку в усолвленные временные сроки без задержек и опозданий.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__box clearfix">
+                        <div class="advantages__box-l">
+                            <span class="icon icon-microphone_2"></span>
+                        </div>
+                        <div class="advantages__box-r">
+                            <h3 class="advantages__box-ttl">24/7 поддержка</h3>
+                            <p class="advantages__box-dsc">
+                                Служба поддержки пользователей готова в любое врем я ответить на все возникшие вопросы.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="advantages__box clearfix">
+                        <div class="advantages__box-l">
+                            <span class="icon icon-eye_2"></span>
+                        </div>
+                        <div class="advantages__box-r">
+                            <h3 class="advantages__box-ttl">Простой контроль процесса доставки</h3>
+                            <p class="advantages__box-dsc">
+                                SMS информирование о прибытии, хранении в отделении или курьерской доставке посылки. Возможность отследить посылку онлайн на любом этапе доставки.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__box clearfix">
+                        <div class="advantages__box-l">
+                            <span class="icon icon-gear_2"></span>
+                        </div>
+                        <div class="advantages__box-r">
+                            <h3 class="advantages__box-ttl">Организованость и надежность</h3>
+                            <p class="advantages__box-dsc">
+                                Вам необходимо только передать нам
+                                посылку и команда  специалистов доставит
+                                ее в целостности и сохранности.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantages__box clearfix">
+                        <div class="advantages__box-l">
+                            <span class="icon icon-cup_2"></span>
+                        </div>
+                        <div class="advantages__box-r">
+                            <h3 class="advantages__box-ttl">Х лет работы на рынке</h3>
+                            <p class="advantages__box-dsc">
+                                Опыт компании и высокая квалификация сотрудников гарантируют высокое качество обслуживания и решение Ваших задач.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="additional_services" data-anchor="point_2">
+            <div class="body-layout">
+                <div class="additional_services__top">
+                    <h2 class="additional_services__ttl">Дополнительные услуги</h2>
+                    <div class="additional_services__ttl-line"></div>
+                </div>
+                <div class="additional_services__wr clearfix">
+                    <div class="additional_services__box clearfix">
+                        <div class="additional_services__box-l">
+                            <span class="icon icon-bag_2"></span>
+                        </div>
+                        <div class="additional_services__box-r">
+                            <h3 class="additional_services__box-ttl">Упаковка</h3>
+                            <p class="additional_services__box-dsc">
+                                Размещение отправления в наиболее подходящий вид упаковки, который обеспечит его надежную транспортировку, хранение и защиту. Также предоставляется услуга формирования паллеты.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="additional_services__box clearfix">
+                        <div class="additional_services__box-l">
+                            <span class="icon icon-car_2"></span>
+                        </div>
+                        <div class="additional_services__box-r">
+                            <h3 class="additional_services__box-ttl">Доставка в сети супермаркетов</h3>
+                            <p class="additional_services__box-dsc">
+                                Услуга предусматривает доставку отправлений (документов, посылок, грузов, партий товара, паллет) в сети супермаркетов в любую точку Украины.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="additional_services__box clearfix">
+                        <div class="additional_services__box-l">
+                            <span class="icon icon-dialogue_2"></span>
+                        </div>
+                        <div class="additional_services__box-r">
+                            <h3 class="additional_services__box-ttl">Сервис информирования</h3>
+                            <p class="additional_services__box-dsc">
+                                Размещение отправления в наиболее подходящий вид упаковки, который обеспечит его надежную транспортировку, хранение и защиту. Также предоставляется услуга формирования паллеты.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="additional_services__box clearfix">
+                        <div class="additional_services__box-l">
+                            <span class="icon icon-delivery_2"></span>
+                        </div>
+                        <div class="additional_services__box-r">
+                            <h3 class="additional_services__box-ttl">Погрузка/Разгрузка</h3>
+                            <p class="additional_services__box-dsc">
+                                Предоставление бесплатной помощи грузчиков при загрузке или выгрузке отправлений.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="additional_services__box clearfix">
+                        <div class="additional_services__box-l">
+                            <span class="icon icon-home_2"></span>
+                        </div>
+                        <div class="additional_services__box-r">
+                            <h3 class="additional_services__box-ttl">Хранение</h3>
+                            <p class="additional_services__box-dsc">
+                                Бесплатное хранение отправления на отдалении в течении 5 рабочих дней с возможностью продления до 25 рабочих дней.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="additional_services__box clearfix">
+                        <div class="additional_services__box-l">
+                            <span class="icon icon-refresh_2"></span>
+                        </div>
+                        <div class="additional_services__box-r">
+                            <h3 class="additional_services__box-ttl">Переадресация</h3>
+                            <p class="additional_services__box-dsc">
+                                Изменение адреса доставки уже оформленного отправления в пределах одного
+                                населенного пункта.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="become-customer" data-anchor="point_3">
+            <div class="body-layout">
+                <div class="become-customer__line"></div>
+                <h1 class="become-customer__ttl">
+                    Как стать<br>
+                    нашим клиентом
+                </h1>
+                <div class="become-customer__wr">
+                    <div class="become-customer__box">
+                        <div class="become-customer__box-ttl">
+                            <span class="become-customer__box-num">01</span>
+                            <h2 class="become-customer__box-name">Заключите договор о предоставлении услуг</h2>
+                        </div>
+                        <div class="become-customer__box-wr clearfix">
+                            <div class="become-customer__box-l">
+                                <div class="become-customer__box-dsc">Для этого загрузите пакет документов:</div>
+                                <div class="become-customer__box-agreement">
+                                    <div class="become-customer__box-agreement-l">
+                                        <div class="become-customer__box-item">
+                                            <span class="icon icon-paper_2"></span>
+                                            <div class="become-customer__box-link"><a href="#">Договор</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="become-customer__box-agreement-r">
+                                        <div class="become-customer__box-item">
+                                            <span class="icon icon-paper_2"></span>
+                                            <div class="become-customer__box-link"><a href="#">Памятка клиента</a></div>
+                                        </div>
+                                        <div class="become-customer__box-help">
+                                                Чтобы корректно
+                                                заполнить договор
+                                                ознакомитесь с
+                                                Памяткой клиента
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="become-customer__box-r">
+                                <div class="become-customer__box-dsc">Обратитесь на ближайшее отделение</div>
+                                <div class="become-customer__box-agreement">
+                                    <div class="become-customer__box-agreement-r">
+                                        <img class="become-customer__box-icon" src="img/design/become-customer.png" width="136" height="141" alt=""/>
+                                        <div class="become-customer__box-help">
+                                                Руководитель отделения
+                                                предоставит Вам
+                                                необходимый
+                                                пакет документов.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="become-customer__box">
+                        <div class="become-customer__box-ttl">
+                            <span class="become-customer__box-num">02</span>
+                            <h2 class="become-customer__box-name">Соберите пакет документов</h2>
+                        </div>
+                        <div class="become-customer__box-wr clearfix">
+                            <div class="become-customer__box-l become-customer__box-l--shortcut">
+                                <div class="become-customer__box-dsc">Соберите пакет документов, указанный в Памятке клиента.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="become-customer__box">
+                        <div class="become-customer__box-ttl">
+                            <span class="become-customer__box-num">03</span>
+                            <h2 class="become-customer__box-name">Передайте договор и пакет документов в отделение</h2>
+                        </div>
+                        <div class="become-customer__box-wr clearfix">
+                            <div class="become-customer__box-l become-customer__box-l--shortcut">
+                                <div class="become-customer__box-dsc">После того, как Ваш договор будет зарегистрирован, Вам придет SMS-подтверждение или наш мемнеджер позвонит Вам.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="become-customer__box">
+                        <div class="become-customer__box-ttl">
+                            <span class="become-customer__box-num">Поздравляем!</span>
+                            <h2 class="become-customer__box-name">Теперь Вы наш клиент!</h2>
+                        </div>
+                        <div class="become-customer__box-wr clearfix">
+                            <div class="become-customer__box-l become-customer__box-l--shortcut">
+                                <div class="become-customer__box-dsc">Регистрируйтесь и контролируйте доставку Ваших грузов.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="body-layout clearfix">
+                <div class="questions__info">
+                    <div class="questions__info-dsr">
+                        Возникли вопросы?<br>
+                        звоните по номеру
+                    </div>
+                    <div class="questions__info-phones">0-800-500-609</div>
+                </div>
+            </div>
+        </section>
+        <section class="for-registered" data-anchor="point_4">
+            <div class="body-layout">
+                <div class="for-registered__top">
+                    <h2 class="additional_services__ttl">Преимущества для зарегистрированных пользователей</h2>
+                    <div class="additional_services__ttl-line"></div>
+                </div>
+                <div class="for-registered__wr">
+                    <div class="for-registered__box">
+                        <div class="for-registered__box-l">
+                            <span class="icon icon-paper_2"></span>
+                        </div>
+                        <div class="for-registered__box-r">
+                            <p class="for-registered__box-dsc">
+                                Оформлять экспресс-накладные (ЭН) и формировать реестры приема-передачи отправлений.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="for-registered__box">
+                        <div class="for-registered__box-l">
+                            <span class="icon icon-printer_2"></span>
+                        </div>
+                        <div class="for-registered__box-r">
+                            <p class="for-registered__box-dsc">
+                                Распечатывать ЭН,
+                                маркировки и реестры отправлений
+                            </p>
+                        </div>
+                    </div>
+                    <div class="for-registered__box">
+                        <div class="for-registered__box-l">
+                            <span class="icon icon-calc_2"></span>
+                        </div>
+                        <div class="for-registered__box-r">
+                            <p class="for-registered__box-dsc">
+                                Контролировать стомость доставки отправлений
+                            </p>
+                        </div>
+                    </div>
+                    <div class="for-registered__box">
+                        <div class="for-registered__box-l">
+                            <span class="icon icon-magnifier_plus_2"></span>
+                        </div>
+                        <div class="for-registered__box-r">
+                            <p class="for-registered__box-dsc">
+                                Находить ЭН по номеру. Просматривать статусы отправлений.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="for-registered__box">
+                        <div class="for-registered__box-l">
+                            <span class="icon icon-cloud_2"></span>
+                        </div>
+                        <div class="for-registered__box-r">
+                            <p class="for-registered__box-dsc">
+                                Получить доступ к взаимной интеграции баз данных “Новой почты” и Клиента.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews" data-anchor="point_5">
+            <div class="body-layout">
+                <div class="reviews__top">
+                    <h2 class="reviews__ttl">Отзывы</h2>
+                    <div class="reviews__ttl-line"></div>
+                </div>
+                <div class="reviews__wr">
+                    <div class="bxslider">
+                        <div class="reviews__box">
+                            <div class="reviews__box-top clearfix">
+                                <div class="reviews__box-username">Иван Иванов</div>
+                                <div class="reviews__box-company">ТОВ “Ромашка”</div>
+                            </div>
+                            <div class="reviews__box-text">
+                                Размещение отправления в наиболее подходящий вид упаковки, который обеспечит его надежную транспортировку, хранение и защиту. Также предоставляется услуга формирования паллеты.аковки, который обеспечит его надежную транспортировку, хранение и защиту. Также предоставляеаковки, который обеспечит его надежную транспортировку, хранение и защиту. Также предоставляе
+                            </div>
+                        </div>
+                        <div class="reviews__box">
+                            <div class="reviews__box-top clearfix">
+                                <div class="reviews__box-username">Иван Иванов</div>
+                                <div class="reviews__box-company">ТОВ “Ромашка”</div>
+                            </div>
+                            <div class="reviews__box-text">
+                                Размещение отправления в наиболее подходящий вид упаковки, который обеспечит его надежную транспортировку, хранение и защиту. Также предоставляется услуга формирования паллеты.аковки, который обеспечит его надежную транспортировку, хранение и защиту. Также предоставляеаковки, который обеспечит его надежную транспортировку, хранение и защиту. Также предоставляе
+                            </div>
+                        </div>
+                        <div class="reviews__box">
+                            <div class="reviews__box-top clearfix">
+                                <div class="reviews__box-username">Иван Иванов</div>
+                                <div class="reviews__box-company">ТОВ “Ромашка”</div>
+                            </div>
+                            <div class="reviews__box-text">
+                                Размещение отправления в наиболее подходящий вид упаковки, который обеспечит его надежную транспортировку, хранение и защиту. Также предоставляется услуга формирования паллеты.аковки, который обеспечит его надежную транспортировку, хранение и защиту. Также предоставляеаковки, который обеспечит его надежную транспортировку, хранение и защиту. Также предоставляе
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer footer-img">
+            <div class="body-layout">
+                <div class="footer-l">
+                    <div class="footer-top">
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Компания</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">О компании</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Контакты</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Вакансии</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Частным клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как отправить посылку</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Бизнес-клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как стать нашим клиентом</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Плюсы регистрации</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Работа с нами on-line</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Тracking</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Поиск отделений</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Калькулятор</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Мобильное приложение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom clearfix">
+                        <div class="footer-bottom-l clearfix">
+                            <div class="footer-logo"><a href="/"><img src="img/design/logo.png" width="41" height="59" alt=""/></a></div>
+                            <div class="footer-bottom-l__dsc">
+                                <p>
+                                    <strong>ООО “ Наша почта”</strong><br>
+                                    012345, г. Минск,<br>
+                                    ул. (ххх) ххх хх хх<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-bottom-r clearfix">
+                            <div class="footer-bottom-r__dsc">
+                                <p>
+                                    <strong>Поддержка клиентов</strong><br>
+                                    тел.: (ххх) ххх хх хх<br>
+                                    e-mail: nasha_pocta@xxx.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-r">
+                    <div class="feedback">
+                        <form action="">
+                            <h3 class="feedback__ttl">Обратная связь</h3>
+                            <div class="feedback__row feedback__row--first">
+                                <div class="b-input"><input type="text" placeholder="Имя"/></div>
+                                <div class="b-input"><input type="text" placeholder="Телефон"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><input type="text" placeholder="Тема"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><textarea name="" placeholder="Текст"></textarea></div>
+                            </div>
+                             <div class="feedback__btn"><button type="submit" class="feedback__btn-ttl">Отправить</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

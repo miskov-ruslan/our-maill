@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наша почта</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/jquery.stellar.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <div class="body-layout">
+            <nav class="clearfix">
+                <div class="logo"><a href="/"><img src="img/design/logo.png" width="41" height="38" alt=""/></a></div>
+                <div class="mobile_item"><span class="icon icon-burger"></span></div>
+                <ul class="nav-list clearfix">
+                    <li class="nav-item"><a class="nav-link" href="#">Частным клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Бизнес-клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tracking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Отделения</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#">О компании</a></li>-->
+                </ul>
+            </nav>
+            <div class="authorized">
+                <div class="authorized__login">
+                    <span class="authorized__login-ttl"><a href="#" class="authorized__login-link">Грицюк Юлия</a></span>
+                </div>
+                <div class="authorized__exit">
+                    <span class="icon icon-log_out_3"></span>
+                    <span class="authorized__exit-ttl"><a href="#" class="authorized__exit-link">Выход</a></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="dashboard-img dashboard-img--my-info">
+            <!--<img class="main-img__w" src="img/content/main_img.jpg" alt=""/>-->
+            <h2 class="my-information">Мои данные</h2>
+            <div class="my-information__line"></div>
+            <menu class="menu">
+                <div class="body-layout">
+                    <div class="menu__ttl">Личный кабинет</div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" data-scroll="point_1" href="#">Мои накладные</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link" data-scroll="point_2" href="#">Архив</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link" data-scroll="point_3" href="#">Мои данные</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link" data-scroll="point_4" href="#">Вызвать курьера</a></li>
+                    </ul>
+                </div>
+            </menu>
+        </div>
+        <section class="dashboard">
+            <div class="body-layout">
+                <div class="dashboard__area clearfix">
+                    <div class="address-info address-centring">
+                        <div class="address-info__head">
+                            <div class="address-info__head--icon">
+                                <span class="icon-man_2 head-man-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts">
+                                <h2 class="address-info__head--name">Грицюк Юлия Николаевна</h2>
+                                <div class="address-info__head--phone">
+                                    <span class="icon-phone_4 phone-stl"></span>
+                                    +38(066)543-00-00
+                                </div>
+                                <div class="address-info__head--mail">
+                                    <span class="icon-env_4 mail-stl"></span>
+                                    grits_julia@i.ua
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__plus">
+                            <h3 class="address-info__tittle--st">Адреса</h3>
+                            <span class="icon-plus_2 plus-style"></span>
+                        </div>
+                        <div class="address-info__main">
+                            <span class="icon-home_3 home-style"></span>
+                            <h3 class="address-info__tittle--st">Основной адрес</h3>
+                            <span class="icon-edit_3 edit-style"></span>
+                            <p class="address-info__text">
+                                Минская область, Минский район <br/> 02232 - г. Минск, Пр. Партизанский 26, кв. 93
+                            </p>
+                        </div>
+                        <div class="address-info__delivery">
+                            <span class="icon-home_3 home-style"></span>
+                            <h3 class="address-info__tittle--st">Адрес доставки</h3>
+                            <span class="icon-edit_3 edit-style"></span>
+                            <p class="address-info__text">
+                                Могилевская область, Кличевский район, <br/> 0123 - г. Гомель, пр. Ленина 93, кв. 101
+                            </p>
+                        </div>
+                    </div>
+                    <div class="address-info address-centring">
+                        <div class="address-info__head">
+                            <div class="address-info__head--icon">
+                                <span class="icon-suitcase_2 head-man-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts address-info__head--contacts-pad">
+                                <h2 class="address-info__head--name">ООО "Космонова"</h2>
+                                <h3 class="address-info__tittle--st address-info__tittle--style-lh">Грицюк Юлия Николаевна</h3>
+                                <div class="address-info__head--phone phone-lh2">
+                                    <span class="icon-phone_4 phone-stl"></span>
+                                    +38(066)543-00-00
+                                </div>
+                                <div class="address-info__head--mail mail-mg">
+                                    <span class="icon-env_4 mail-stl"></span>
+                                    grits_julia@i.ua
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__plus">
+                            <h3 class="address-info__tittle--st">Адреса</h3>
+                            <span class="icon-plus_2 plus-style"></span>
+                        </div>
+                        <div class="address-info__main">
+                            <span class="icon-home_3 home-style"></span>
+                            <h3 class="address-info__tittle--st">Основной адрес</h3>
+                            <span class="icon-edit_3 edit-style"></span>
+                            <p class="address-info__text">
+                                Минская область, Минский район <br/> 02232 - г. Минск, Пр. Партизанский 26, кв. 93
+                            </p>
+                        </div>
+                        <div class="address-info__delivery">
+                            <span class="icon-home_3 home-style"></span>
+                            <h3 class="address-info__tittle--st">Адрес доставки</h3>
+                            <span class="icon-edit_3 edit-style"></span>
+                            <p class="address-info__text">
+                                Могилевская область, Кличевский район, <br/> 0123 - г. Гомель, пр. Ленина 93, кв. 101
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                    <h2 class="my-information my-partners">Мои контрагенты</h2>
+                <div class="dashboard__area dashboard__area-mb clearfix" id="counteragents">
+                    <div class="address-info address-centring">
+                        <div class="address-info__head">
+                            <div class="address-info__head--icon">
+                                <span class="icon-man_2 head-man-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts address-info__head--contacts-part-pad">
+                                <h2 class="address-info__head--name">Петро Петр Иванович</h2>
+                                <div class="address-info__head--phone">
+                                    <span class="icon-phone_4 phone-stl"></span>
+                                    +38(066)543-00-00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__plus">
+                            <h3 class="address-info__tittle--st">Адреса</h3>
+                            <span class="icon-plus_2 plus-style"></span>
+                        </div>
+                        <div class="address-info__main">
+                            <span class="icon-home_3 home-style"></span>
+                            <h3 class="address-info__tittle--st">Основной адрес</h3>
+                            <span class="icon-edit_3 edit-style"></span>
+                            <p class="address-info__text">
+                                Минская область, Минский район <br/> 02232 - г. Минск, Пр. Партизанский 26, кв. 93
+                            </p>
+                        </div>
+                        <div class="address-info__delivery">
+                            <span class="icon-geoloc_2 home-style"></span>
+                            <h3 class="address-info__tittle--st">Адрес доставки</h3>
+                            <span class="icon-edit_3 edit-style"></span>
+                            <p class="address-info__text">
+                                Могилевская область, Кличевский район, <br/> 0123 - г. Гомель, пр. Ленина 93, кв. 101
+                            </p>
+                        </div>
+                        <div class="address-info_send">
+                            <h3 class="address-info__tittle--st">20.12.15 отправил Вам посылку</h3>
+                        </div>
+                    </div>
+                    <div class="address-info address-centring">
+                        <div class="address-info__head">
+                            <div class="address-info__head--icon">
+                                <span class="icon-man_2 head-man-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts address-info__head--contacts-part-pad">
+                                <h2 class="address-info__head--name">Петро Петр Иванович</h2>
+                                <div class="address-info__head--phone">
+                                    <span class="icon-phone_4 phone-stl"></span>
+                                    +38(066)543-00-00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info__plus">
+                            <h3 class="address-info__tittle--st">Адреса</h3>
+                            <span class="icon-plus_2 plus-style"></span>
+                        </div>
+                        <div class="address-info__main">
+                            <span class="icon-home_3 home-style"></span>
+                            <h3 class="address-info__tittle--st">Основной адрес</h3>
+                            <span class="icon-edit_3 edit-style"></span>
+                            <p class="address-info__text">
+                                Минская область, Минский район <br/> 02232 - г. Минск, Пр. Партизанский 26, кв. 93
+                            </p>
+                        </div>
+                        <div class="address-info__delivery">
+                            <span class="icon-geoloc_2 home-style"></span>
+                            <h3 class="address-info__tittle--st">Адрес доставки</h3>
+                            <span class="icon-edit_3 edit-style"></span>
+                                <p class="address-info__text">
+                                Могилевская область, Кличевский район, <br/> 0123 - г. Гомель, пр. Ленина 93, кв. 101
+                            </p>
+                        </div>
+                        <div class="address-info_send">
+                            <h3 class="address-info__tittle--st">20.12.15 отправил Вам посылку</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer footer-img">
+            <div class="body-layout">
+                <div class="footer-l">
+                    <div class="footer-top">
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Компания</h3></li>
+                            <!--<li class="footer__item"><a class="footer__item-link" href="#">О компании</a></li>-->
+                            <li class="footer__item"><a class="footer__item-link" href="#">Контакты</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Вакансии</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Частным клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как отправить посылку</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Бизнес-клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как стать нашим клиентом</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Плюсы регистрации</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Работа с нами on-line</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Тracking</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Поиск отделений</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Калькулятор</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Мобильное приложение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom clearfix">
+                        <div class="footer-bottom-l clearfix">
+                            <div class="footer-logo"><a href="/"><img src="img/design/logo.png" width="41" height="59" alt=""/></a></div>
+                            <div class="footer-bottom-l__dsc">
+                                <p>
+                                    <strong>ООО “ Наша почта”</strong><br>
+                                    012345, г. Минск,<br>
+                                    ул. (ххх) ххх хх хх<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-bottom-r clearfix">
+                            <div class="footer-bottom-r__dsc">
+                                <p>
+                                    <strong>Поддержка клиентов</strong><br>
+                                    тел.: (ххх) ххх хх хх<br>
+                                    e-mail: nasha_pocta@xxx.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-r">
+                    <div class="feedback">
+                        <form action="">
+                            <h3 class="feedback__ttl">Обратная связь</h3>
+                            <div class="feedback__row feedback__row--first">
+                                <div class="b-input"><input type="text" placeholder="Имя"/></div>
+                                <div class="b-input"><input type="text" placeholder="Телефон"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><input type="text" placeholder="Тема"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><textarea name="" placeholder="Текст"></textarea></div>
+                            </div>
+                             <div class="feedback__btn"><button type="submit" class="feedback__btn-ttl">Отправить</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<div class="popup">
+    <div class="popup__bg"></div>
+    <div class="popup__box">
+        <div class="popup__close"><span class="icon icon-cross_3"></span></div>
+        <h2 class="popup__ttl">Адрес</h2>
+        <div class="popup__ttl-line"></div>
+        <div class="popup__form">
+            <div class="popup__form-row">
+                <div class="popup__form-col">
+                    <div class="b-input-search"><input type="text" placeholder="Адрес"><span class="icon icon-magnifier_2"></span><span class="icon icon-home_2"></span></div>
+                </div>
+            </div>
+            <div class="popup__form-row popup__form-row--triple">
+                <div class="popup__form-col">
+                    <div class="b-input"><input type="text" placeholder="Кв./Оф."/></div>
+                </div>
+                <div class="popup__form-col">
+                    <div class="b-input"><input type="text" placeholder="Корпус"/></div>
+                </div>
+                <div class="popup__form-col">
+                    <div class="b-input"><input type="text" placeholder="Комната"/></div>
+                </div>
+            </div>
+            <div class="popup__switcher">
+                <div class="popup__switcher-box active">
+                    <span class="icon icon-home_2"></span>
+                    <p class="popup__switcher-ttl">Основной адрес</p>
+                </div>
+                <div class="popup__switcher-box">
+                    <span class="icon icon-geoloc_2"></span>
+                    <p class="popup__switcher-ttl">Адрес доставки</p>
+                </div>
+            </div>
+            <div class="popup__btns">
+                <div class="b-button-gray"><span class="b-button-gray__ttl">Сохранить</span></div>
+                <div class="b-button-gray"><span class="b-button-gray__ttl">Отмена</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="js/main.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#counteragents .address-info').mouseover(function() {
+            $('.address-info_send', this).show();
+        });
+        $('#counteragents .address-info').mouseout(function() {
+            $('.address-info_send', this).hide();
+        });
+        $('.dashboard__area .address-info__main, .dashboard__area .address-info__delivery').mouseover(function() {
+            $('.edit-style', this).show();
+        });
+        $('.dashboard__area .address-info__main, .dashboard__area .address-info__delivery').mouseout(function() {
+            $('.edit-style', this).hide();
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Departments</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/reset.css" type="text/css"/>
+    <link rel="stylesheet" href="css/forms.css" type="text/css"/>
+    <link rel="stylesheet" href="css/media.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+		<header class="header">
+			<div class="body-layout">
+				<nav class="clearfix">
+					<div class="logo"><a href="/"><img src="img/design/logo.png" width="41" height="38" alt=""/></a></div>
+					<div class="mobile_item"><span class="icon icon-burger"></span></div>
+					<ul class="nav-list clearfix">
+						<li class="nav-item"><a class="nav-link" href="#">Частным клиентам</a></li>
+						<li class="nav-item"><a class="nav-link active" href="#">Бизнес-клиентам</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Tracking</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Отделения</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">О компании</a></li>
+					</ul>
+				</nav>
+				<div class="authorized">
+					<div class="authorized__login">
+						<span class="authorized__login-ttl"><a href="#" class="authorized__login-link">Грицюк Юлия</a></span>
+					</div>
+					<div class="authorized__exit">
+						<span class="icon icon-log_out_3"></span>
+						<span class="authorized__exit-ttl"><a href="#" class="authorized__exit-link">Выход</a></span>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="main-fixed-container">
+			<div class="container__l-side departments-l">
+                <div class="filter-block">
+                    <div class="departments-block">
+                        <div class="departments-block__search">
+                            Поиск отделения по городу или адресу
+                            <div class="b-input-search"><input type="text" placeholder="Введите номер накладной"><span class="icon icon-magnifier_2"></span></div>
+                        </div>
+                        <div class="departments-block__type">
+                            Тип отделений
+                            <div class="type-offices departments-block__type--wrap">
+                                    <div class="b-checkbox">
+                                        <input type="checkbox" name="">
+                                    </div>
+                                    <div class="type-offices__weight">
+                                        <span class="icon icon-department_4"></span>
+                                        <span class="type-offices__weight-dsc">До 30 кг.</span>
+                                    </div>
+
+                                    <div class="b-checkbox">
+                                        <input type="checkbox" name="" >
+                                    </div>
+                                    <div class="type-offices__weight">
+                                        <span class="icon icon-department_4"></span>
+                                        <span class="type-offices__weight-dsc">Грузовое</span>
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule-block">
+                        <div class="schedule-block__days">
+                            <p>
+                                <label for="days">График работы: </label>
+                                <input type="text" id="days">
+                            </p>
+                            <div class="schedule-block__choose-day">
+                                <div id="slider-week" class="time-range"></div>
+                                <div class="day">
+                                    <span class="day-visible">Пн</span>
+                                    <span class="day-visible">Вт</span>
+                                    <span class="day-visible">Ср</span>
+                                    <span class="day-visible">Чт</span>
+                                    <span class="day-visible">Пт</span>
+                                    <span class="day-visible">Сб</span>
+                                    <span class="day-visible">Вс</span>
+                                </div>
+                                <div class="day">
+                                    <span class="day-point"></span>
+                                    <span class="day-point"></span>
+                                    <span class="day-point"></span>
+                                    <span class="day-point"></span>
+                                    <span class="day-point"></span>
+                                    <span class="day-point"></span>
+                                    <span class="day-point"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule-block__time">
+                            <p>
+                                <label for="amount">Часы работы</label>
+                                <input type="text" id="amount">
+                            </p>
+                            <div class="schedule-block__choose-time">
+                                <div id="slider-range" class="time-range"></div>
+                                <div class="timing">
+                                    <span class="timing-visible">08:00</span>
+                                    <span class="timing-visible">12:00</span>
+                                    <span class="timing-visible">16:00</span>
+                                    <span class="timing-visible">19:00</span>
+                                    <span class="timing-visible">23:00</span>
+                                </div>
+                                <div class="timing">
+                                    <span class="timing-point"></span>
+                                    <span class="timing-point"></span>
+                                    <span class="timing-point"></span>
+                                    <span class="timing-point"></span>
+                                    <span class="timing-point"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="map-item__container">
+                        <div class="map-item">
+                            <div class="map-item__main">
+                                <img src="img/content/mainMap.png" alt="mainMap"/>
+                            </div>
+                            <div class="map-item__other">
+                                <div class="other-item">
+                                    <img src="img/content/office1.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office2.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office3.png" alt="of"/>
+                                </div>
+                            </div>
+                            <div class="map-item__overlay"></div>
+                            <div class="map-item__location">
+                                <span class="item-city">Минск 001</span>
+                                пр. Ленина, 93
+                                <span class="icon-department_3 map-it_2-style"></span>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <div class="map-item__main">
+                                <img src="img/content/mainMap.png" alt="mainMap"/>
+                            </div>
+                            <div class="map-item__other">
+                                <div class="other-item">
+                                    <img src="img/content/office1.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office2.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office3.png" alt="of"/>
+                                </div>
+                            </div>
+                            <div class="map-item__overlay"></div>
+                            <div class="map-item__location">
+                                <span class="item-city">Минск 001</span>
+                                пр. Ленина, 93
+                                <span class="icon-department_3 map-it_2-style"></span>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <div class="map-item__main">
+                                <img src="img/content/mainMap.png" alt="mainMap"/>
+                            </div>
+                            <div class="map-item__other">
+                                <div class="other-item">
+                                    <img src="img/content/office1.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office2.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office3.png" alt="of"/>
+                                </div>
+                            </div>
+                            <div class="map-item__overlay"></div>
+                            <div class="map-item__location">
+                                <span class="item-city">Минск 001</span>
+                                пр. Ленина, 93
+                                <span class="icon-delivery_3 map-it_2-style"></span>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <div class="map-item__main">
+                                <img src="img/content/mainMap.png" alt="mainMap"/>
+                            </div>
+                            <div class="map-item__other">
+                                <div class="other-item">
+                                    <img src="img/content/office1.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office2.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office3.png" alt="of"/>
+                                </div>
+                            </div>
+                            <div class="map-item__overlay"></div>
+                            <div class="map-item__location">
+                                <span class="item-city">Минск 001</span>
+                                пр. Ленина, 93
+                                <span class="icon-department_3 map-it_2-style"></span>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <div class="map-item__main">
+                                <img src="img/content/mainMap.png" alt="mainMap"/>
+                            </div>
+                            <div class="map-item__other">
+                                <div class="other-item">
+                                    <img src="img/content/office1.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office2.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office3.png" alt="of"/>
+                                </div>
+                            </div>
+                            <div class="map-item__overlay"></div>
+                            <div class="map-item__location">
+                                <span class="item-city">Минск 001</span>
+                                пр. Ленина, 93
+                                <span class="icon-department_3 map-it_2-style"></span>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <div class="map-item__main">
+                                <img src="img/content/mainMap.png" alt="mainMap"/>
+                            </div>
+                            <div class="map-item__other">
+                                <div class="other-item">
+                                    <img src="img/content/office1.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office2.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office3.png" alt="of"/>
+                                </div>
+                            </div>
+                            <div class="map-item__overlay"></div>
+                            <div class="map-item__location">
+                                <span class="item-city">Минск 001</span>
+                                пр. Ленина, 93
+                                <span class="icon-delivery_3 map-it_2-style"></span>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <div class="map-item__main">
+                                <img src="img/content/mainMap.png" alt="mainMap"/>
+                            </div>
+                            <div class="map-item__other">
+                                <div class="other-item">
+                                    <img src="img/content/office1.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office2.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office3.png" alt="of"/>
+                                </div>
+                            </div>
+                            <div class="map-item__overlay"></div>
+                            <div class="map-item__location">
+                                <span class="item-city">Минск 001</span>
+                                пр. Ленина, 93
+                                <span class="icon-department_3 map-it_2-style"></span>
+                            </div>
+                        </div>
+                        <div class="map-item">
+                            <div class="map-item__main">
+                                <img src="img/content/mainMap.png" alt="mainMap"/>
+                            </div>
+                            <div class="map-item__other">
+                                <div class="other-item">
+                                    <img src="img/content/office1.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office2.png" alt="of"/>
+                                </div>
+                                <div class="other-item">
+                                    <img src="img/content/office3.png" alt="of"/>
+                                </div>
+                            </div>
+                            <div class="map-item__overlay"></div>
+                            <div class="map-item__location">
+                                <span class="item-city">Минск 001</span>
+                                пр. Ленина, 93
+                                <span class="icon-department_3 map-it_2-style"></span>
+                            </div>
+                        </div>
+                    <div class="map-item">
+                        <div class="map-item__main">
+                            <img src="img/content/mainMap.png" alt="mainMap"/>
+                        </div>
+                        <div class="map-item__other">
+                            <div class="other-item">
+                                <img src="img/content/office1.png" alt="of"/>
+                            </div>
+                            <div class="other-item">
+                                <img src="img/content/office2.png" alt="of"/>
+                            </div>
+                            <div class="other-item">
+                                <img src="img/content/office3.png" alt="of"/>
+                            </div>
+                        </div>
+                        <div class="map-item__overlay"></div>
+                        <div class="map-item__location">
+                            <span class="item-city">Минск 001</span>
+                            пр. Ленина, 93
+                            <span class="icon-delivery_3 map-it_2-style"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+			<div class="container__r-side">
+				<div id="map_canvas" class="mapInit full-map_canvas"></div>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+    </div>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="js/main.js"></script>
+	<script src="js/google_maps_markers.js"></script>
+
+    <script>
+		googleMapsMarkers.getMap("map_canvas",53.8863689,27.5609544,10);
+
+    </script>
+
+    <script>
+        $(document).ready(function(){
+            $('.map-item').hover(function() {
+                $('.map-item__overlay', this).toggleClass('active-overlay');
+                $('.map-it_2-style', this).toggleClass('dep-tem-active');
+            });
+
+            // scroll
+
+            $(window).load(function(){
+                $(".map-item__container").mCustomScrollbar({
+                    axis: "y",
+                    theme: "dark-3",
+                    mouseWheel:{
+                        scrollAmount:"300"
+                    },
+                    advanced: {
+                        autoExpandVerticalScroll: true,
+                        updateOnBrowserResize:true,
+                        updateOnContentResize:true
+                    },
+                    scrollButtons: {
+                        enable: true,
+                        scrollType: "stepped"
+                    }
+                });
+            });
+
+            // checkbox (iCheck)
+
+            $('.b-checkbox input').iCheck();
+
+            //type-offices
+            $('.type-offices .b-checkbox input').on('ifChecked', function(){
+                $('.type-offices__weight').removeClass('type-offices__weight--active');
+                $('.type-offices .b-checkbox input').not(this).iCheck('uncheck');
+                $(this).parents('.b-checkbox').next('.type-offices__weight').addClass('type-offices__weight--active');
+            });
+            $('.type-offices .b-checkbox input').on('ifUnchecked', function(){
+                $(this).parents('.b-checkbox').next('.type-offices__weight').removeClass('type-offices__weight--active');
+            });
+            if($('.type-offices .icheckbox').hasClass('checked')) {
+                $('.type-offices .checked').parents('.b-checkbox').next('.type-offices__weight').addClass('type-offices__weight--active');
+            }
+
+            // resize window moves
+
+            if ($(window).width() <= 1053) {
+                $('.container__l-side').append($('.container__r-side'));
+                $('.container__r-side').insertAfter('.filter-block');
+            } else {
+                $('.main-fixed-container').append($('.container__r-side'));
+            };
+
+            $(window).on('resize', function () {
+               if ($(window).width() <= 1053) {
+                   $('.container__l-side').append($('.container__r-side'));
+                   $('.container__r-side').insertAfter('.filter-block');
+               } else {
+                   $('.main-fixed-container').append($('.container__r-side'));
+               }
+            });
+        });
+    </script>
+        <script>
+
+            // daySlider
+
+
+            var days = {
+                1: "Понедельник",
+                2: "Вторник",
+                3: "Среда",
+                4: "Четверг",
+                5: "Пятница",
+                6: "Суббота",
+                7: "Воскресенье"
+            };
+            $(function() {
+                $( "#slider-week" ).slider({
+                    range: true,
+                    min: 1,
+                    max: 7,
+                    values: [ 1, 5],
+                    slide: function( event, ui ) {
+                        $( "#days" ).val(days[ui.values[ 0 ]] + " - " + days[ui.values[ 1 ]] );
+                    }
+                });
+                $( "#days" ).val(days[$( "#slider-week" ).slider( "values", 0 )]  + " - " + days[$( "#slider-week" ).slider( "values", 1 )] );
+            });
+
+        // timeSlider
+
+        $(function() {
+            $( "#slider-range" ).slider({
+                range: true,
+                min: 8,
+                max: 23,
+                values: [ 9, 18 ],
+                slide: function( event, ui ) {
+                    $( "#amount" ).val( "с " + ui.values[ 0 ] + ":00" + " до " + ui.values[ 1 ] + ":00" );
+                }
+            });
+            $( "#amount" ).val( "с " + $( "#slider-range" ).slider( "values", 0 ) + ":00" +
+            " до " + $( "#slider-range" ).slider( "values", 1 ) + ":00" );
+        });
+    </script>
+
+</body>
+</html>

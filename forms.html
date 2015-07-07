@@ -1,0 +1,203 @@
+<!-- Template created Miskov Ruslan -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/forms.css"/>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+</head>
+<body>
+    <div style="padding: 10px">
+        <!-- BEGIN text field (attach forms.css, reset.css) -->
+        <div class="b-input"><input type="text" placeholder="Текст"/></div>
+        <!-- END text field -->   
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN password field (attach forms.css, reset.css + script the bottom of this page) -->
+        <div class="b-input b-input-pass"><input type="password" placeholder="Пароль"/><a href="#" class="link">показать пароль</a></div>
+        <!-- END password field -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN text field error (attach fonts.css, forms.css, reset.css) -->
+        <div class="b-input b-input-error">
+            <span class="icon icon-error_3"></span>
+            <span class="error-text">Error text error text error</span>
+            <input type="text" value="Текст" placeholder="Текст"/>
+        </div>
+        <!-- END text field error -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN search field (attach fonts.css, forms.css, reset.css) -->
+        <div class="b-input-search"><input type="text" placeholder="Текст"><span class="icon icon-magnifier_2"></span></div>
+        <!-- END search field -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN datapicker field (attach fonts.css, forms.css, reset.css, ui_datapicker.css, jquery-ui-1.10.4.custom.min.js + initializing the bottom of this page) -->
+        <div class="b-input-datapicker"><input class="datapic_init" type="text" placeholder="Текст"><span class="icon icon-calendar_3 datapic_init-bt"></span></div>
+        <!-- END datapicker field -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN select (attach forms.css, reset.css, select2.css, jquery.min.js, select2.min.js + initializing the bottom of this page) -->
+        <select class="b-select" name="" id="">
+            <option value="s1">Текст</option>
+            <option value="s1">Текст</option>
+            <option value="s1">Текст</option>
+        </select>        
+        <!-- END select -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN button red (attach forms.css, reset.css, fonts.googleapis.com/css?family=Roboto... ) -->
+        <div class="b-button-red"><span class="b-button-red__ttl">Отправить</span></div>
+        <!-- END button red -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN button gray (attach forms.css, reset.css, fonts.googleapis.com/css?family=Roboto... ) -->
+        <div class="b-button-gray"><span class="b-button-gray__ttl">Похожие вакансии</span></div>
+        <!-- END button gray -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN pagination (attach forms.css, reset.css )-->
+        <div class="pagination">
+            <a class="pagination__arrow" href="#"><span class="icon icon-arrow_left_4"></span>Назад</a>
+            <ul class="pagination__list">
+                <li class="pagination__item"><a class="pagination__link active" href="#">1</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
+                <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
+            </ul>
+            <a class="pagination__arrow" href="#">Вперед <span class="icon icon-arrow_right_4"></span></a>
+        </div>
+        <!-- END pagination -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN type-offices (attach forms.css, fonts.css, reset.css, jquery.min.js, icheck.min.js + initializing and script the bottom of this page) -->
+        <div class="form-ttl">Тип отделений</div>
+        <div class="type-offices">
+            <div class="b-checkbox">
+                <input type="checkbox" name="">
+            </div>
+            <div class="type-offices__weight">
+                <span class="icon icon-department_4"></span>
+                <span class="type-offices__weight-dsc">До 30 кг.</span>
+            </div>
+            <div class="b-checkbox">
+                <input type="checkbox" name="" >
+            </div>
+            <div class="type-offices__weight">
+                <span class="icon icon-department_4"></span>
+                <span class="type-offices__weight-dsc">Грузовое</span>
+            </div>
+        </div>
+        <!-- END type-offices -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN type-ownership (attach forms.css, reset.css, jquery.min.js + script the bottom of this page) -->
+        <div class="type-ownership clearfix">
+            <div class="type-ownership__ttl">Форма собственности</div>
+            <div class="type-ownership__dsc">
+                <span class="type-ownership__dsc-name">Общество с ограниченной ответственностью</span>
+                <div class="type-ownership__dsc-arrow"><span class="arrow"></span></div>
+                <ul class="type-ownership__dropdown">
+                    <li class="type-ownership__dropdown-item">Общество с ограниченной ответственностью</li>
+                    <li class="type-ownership__dropdown-item">Общество с ограни</li>
+                    <li class="type-ownership__dropdown-item">Общество с ограниченной от</li>
+                    <li class="type-ownership__dropdown-item">Общество с огра</li>
+                </ul>
+            </div>
+        </div>
+        <!-- END type-ownership -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN checkbox (attach forms.css, reset.css, jquery.min.js, icheck.min.js + initializing the bottom of this page) -->
+        <div class="b-checkbox">
+            <label class="b-checkbox__label"><input type="checkbox" name="" checked><span class="b-checkbox__ttl">Я согласен</span></label>
+        </div>
+        <!-- END checkbox -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN link (attach forms.css, reset.css)-->
+        <a class="link" href="#">Положениями и условиями</a>
+        <!-- END link -->
+    </div>
+    <div style="padding: 10px">
+        <!-- BEGIN authorized (attach forms.css, fonts.css, reset.css) -->
+        <div class="authorized">
+            <div class="authorized__login">
+                <span class="authorized__login-ttl"><a href="#" class="authorized__login-link">Грицюк Юлия</a></span>
+            </div>
+            <div class="authorized__exit">
+                <span class="icon icon-log_out_3"></span>
+                <span class="authorized__exit-ttl"><a href="#" class="authorized__exit-link">Выход</a></span>
+            </div>
+        </div>
+        <!-- END authorized -->
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // select2
+            $('.b-select').select2({
+                placeholder: "Текст",
+                width: "100%"
+            });
+
+            //b-input-pass
+            $('.b-input-pass .link').click(function(e) {
+                e.preventDefault();
+                if($(this).prev('input').attr('type') == 'password') {
+                    $(this).prev('input').attr('type', 'text');
+                    $(this).text('скрыть пароль');
+                } else {
+                    $(this).prev('input').attr('type', 'password');
+                    $(this).text('показать пароль');
+                }
+            });
+
+            // checkbox (iCheck)
+            $('.b-checkbox input').iCheck();
+
+            //type-offices
+            $('.type-offices .b-checkbox input').on('ifChecked', function(event){
+                $('.type-offices__weight').removeClass('type-offices__weight--active');
+                $('.type-offices .b-checkbox input').not(this).iCheck('uncheck');
+                $(this).parents('.b-checkbox').next('.type-offices__weight').addClass('type-offices__weight--active');
+            });
+            $('.type-offices .b-checkbox input').on('ifUnchecked', function(event){
+                $(this).parents('.b-checkbox').next('.type-offices__weight').removeClass('type-offices__weight--active');
+            });
+            if($('.type-offices .icheckbox').hasClass('checked')) {
+                $('.type-offices .checked').parents('.b-checkbox').next('.type-offices__weight').addClass('type-offices__weight--active');
+            }
+
+            // type-ownership__dropdown
+            $('.type-ownership__dsc').click(function() {
+                if($('.type-ownership__dropdown').is(':hidden')) {
+                    $('.type-ownership__dsc').addClass('active');
+                    $('.type-ownership__dropdown').slideDown();
+                } else {
+                    $('.type-ownership__dropdown').slideUp(function() {
+                        $('.type-ownership__dsc').removeClass('active');
+                    });
+                }
+            });
+            $('.type-ownership__dropdown-item').click(function() {
+                $('.type-ownership__dsc-name').text($(this).text());
+            });
+
+            // datapicker
+            $(".datapic_init").datepicker();
+            $(".datapic_init-bt").on("click", function () {
+                $(this).parents(".b-input-datapicker").find(".datapic_init").datepicker("show");
+            });
+
+
+        });
+    </script>
+</body>
+</html>

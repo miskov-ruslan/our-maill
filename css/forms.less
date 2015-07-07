@@ -1,0 +1,622 @@
+@import "variables.less";
+@import "flex-mixins.less";
+
+/* ============= BEGIN forms ============= */
+
+::-webkit-input-placeholder {
+  color: @border;
+  text-overflow: ellipsis;
+  opacity: 1;
+  font-size: 15px;
+  font-family: Arial, Tahoma, sans-serif;
+}
+
+:-moz-placeholder {
+  color: @border;
+  text-overflow: ellipsis;
+  opacity: 1;
+  font-size: 15px;
+  font-family: Arial, Tahoma, sans-serif;
+}
+
+::-moz-placeholder {
+  color: @border;
+  text-overflow: ellipsis;
+  opacity: 1;
+  font-size: 15px;
+  font-family: Arial, Tahoma, sans-serif;
+}
+
+:-ms-input-placeholder {
+  color: @border;
+  text-overflow: ellipsis;
+  opacity: 1;
+  font-size: 15px;
+  font-family: Arial, Tahoma, sans-serif;
+}
+
+button {
+  background: none;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  padding: 10px 0;
+}
+
+.b-input, .b-input-search, .b-input-datapicker {
+  position: relative;
+
+  input, textarea {
+    width: 100%;
+    height: 100%;
+    background: @input-bg;
+    border: 1px solid @border;
+    color: @link-color;
+    font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+    font-size: 17px;
+    padding: 12px 9px 12px 9px;
+    .border-radius(2px);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+  }
+
+  input:focus,
+  textarea:focus {
+    border: 1px solid @input-border-focus;
+  }
+
+  textarea {
+    resize: none;
+    height: 90px;
+  }
+}
+
+.b-input-error {
+  input {
+    border: 1px solid @red2;
+    padding-left: 42px;
+
+    &:focus {
+      border: 1px solid @red2 !important;
+    }
+
+  }
+  .icon {
+    color: @red2;
+    font-size: 30px;
+    left: 6px;
+    position: absolute;
+    top: 8px;
+    cursor: pointer;
+
+    &:hover {
+      & + .error-text {
+        display: block;
+      }
+    }
+  }
+  .error-text {
+    position: absolute;
+    left: 0;
+    top: -43px;
+    background: @bg-bright;
+    border-bottom: 2px solid @border;
+    color: @main_text;
+    font-size: 13px;
+    padding: 15px 12px 12px 12px;
+    display: none;
+
+    &:before {
+      border-color: @border transparent transparent transparent;
+      border-style: solid;
+      border-width: 8px;
+      content: "";
+      display: block;
+      height: 0;
+      left: 13px;
+      position: absolute;
+      bottom: -18px;
+      width: 0;
+      z-index: 100;
+    }
+    &:after {
+      border-color: @bg-bright transparent transparent transparent;
+      border-style: solid;
+      border-width: 8px;
+      content: "";
+      display: block;
+      height: 0;
+      left: 13px;
+      position: absolute;
+      bottom: -16px;
+      width: 0;
+      z-index: 100;
+    }
+
+  }
+}
+
+.b-input-pass {
+  .link {
+    position: absolute;
+    right: 14px;
+    top: 13px;
+  }
+}
+
+.form-ttl {
+  font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+  font-size: 14px;
+  color: @input-color;
+  padding: 0 0 2px;
+}
+
+.b-input-search, .b-input-datapicker {
+
+  input {
+    padding: 12px 44px 12px 9px;
+
+    &:focus {
+      &+.icon { color: @input-border-focus; }
+    }
+
+  }
+  .icon {
+    cursor: pointer;
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    width: 30px;
+    height: 34px;
+    color: @border;
+    display: inline-block;
+    font-size: 34px;
+
+    &:hover {
+      color: @input-icon-hover;
+    }
+  }
+
+}
+
+.b-select {
+  width: 100%;
+  font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+  font-size: 17px;
+}
+
+.b-input-lang {
+  position: relative;
+
+  input {
+    padding: 12px 44px 12px 9px;
+  }
+
+  .lang {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 15px;
+    color: @input-color;
+    text-transform: uppercase;
+    margin: 14px 15px 0 0;
+  }
+}
+
+
+/* ============= END forms ============= */
+
+/* ============= BEGIN icon ============= */
+
+.icon {
+  display: inline-block;
+  font-size: 34px;
+  color: @link-color;
+}
+
+/* ============= END icon ============= */
+
+/* ============= BEGIN buttons ============= */
+
+.b-button-red {
+  background: @button-color;
+  text-align: center;
+  cursor: pointer;
+  .border-radius(2px);
+  position: relative;
+  .transition(all, 0.1s, linear);
+
+  &:hover {
+    background: @button-color-hover;
+  }
+  &:active {
+    .b-button-red__ttl {
+      color: rgba(255,255,255,.5);
+    }
+  }
+  &__ttl {
+    color: @body_bg;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    font-family: @font-family-title;
+    font-weight: @font-weight-medium;
+    font-size: 19px;
+  }
+
+  .icon {
+    color: @body_bg;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    font-size: 27px;
+    border-right: 1px solid @body_bg;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 4px 13px 0 0;
+    height: calc(~"100% - 8px");
+    margin: 4px 0 0 15px;
+  }
+}
+
+.b-button-gray {
+  background: @border;
+  text-align: center;
+  cursor: pointer;
+  .border-radius(2px);
+  .transition(all, 0.1s, linear);
+
+  &:hover {
+    background: @input-border-focus;
+  }
+  &:active {
+    .b-button-gray__ttl {
+      color: rgba(255,255,255,.5);
+    }
+  }
+  &__ttl {
+    color: @body_bg;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+    font-family: @font-family-title;
+    font-weight: @font-weight-medium;
+    font-size: 19px;
+  }
+}
+
+/* ============= END buttons ============= */
+
+/* ============= BEGIN pagination ============= */
+
+.pagination {
+  background: @bg-bright6;
+  border: 1px solid @bg-bright7;
+  padding: 0 16px;
+  .display_flex();
+  .justify-content_space-between();
+  .align-items_center();
+
+  &__arrow {
+    font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+    font-size: 15px;
+    color: @input-border-focus;
+    text-decoration: none;
+
+    &:hover {
+      color: @main_text;
+
+      .icon {
+        color: @main_text;
+        font-size: 14px;
+      }
+    }
+
+    .icon {
+      color: @input-border-focus;
+      font-size: 14px;
+      width: 18px;
+    }
+  }
+  &__list {
+    .display_flex();
+  }
+  &__item {
+    .active {
+      background: @button-color;
+      color: @body_bg;
+
+      &:hover {
+        background: @button-color;
+        color: @body_bg;
+      }
+
+    }
+  }
+  &__link {
+    font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+    font-size: 17px;
+    color: @link-color;
+    text-decoration: none;
+    padding: 15px 17px;
+    display: block;
+    margin: -1px 0;
+
+    &:hover {
+      background: @bg-bright;
+      color: @title-color;
+    }
+  }
+}
+
+/* ============= END pagination ============= */
+
+/* ============= BEGIN arrow ============= */
+
+.arrow {
+  border-color: @border transparent transparent;
+  border-style: solid;
+  border-width: 7px 6px 0;
+  position: absolute;
+  height: 0;
+  width: 0;
+  left: 0;
+  top: 0;
+}
+
+/* ============= END arrow ============= */
+
+/* ============= BEGIN type-offices ============= */
+
+.type-offices {
+  border: 1px solid @border;
+  .display_flex();
+  .align-items_center();
+  max-width: 464px;
+  height: 45px;
+  width: 433px;
+
+  .b-checkbox {
+    border-right: 1px solid @bg-bright;
+    padding: 4px 19px;
+
+    .icheckbox {
+
+    }
+  }
+  &__weight {
+    .display_flex();
+    .align-items_center();
+    padding: 0 30px;
+    border-right: 1px solid @border;
+    height: 100%;
+
+    &:last-child {
+      border: none;
+    }
+
+    .icon {
+      color: @input-border-focus;
+      font-size: 26px;
+    }
+  }
+  &__weight-dsc {
+    font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+    font-size: 15px;
+    color: @input-border-focus;
+    padding: 0 0 0 7px;
+  }
+  &__weight--active {
+    .icon {
+      color: @main_text;
+    }
+    .type-offices__weight-dsc {
+      color: @main_text;
+
+    }
+  }
+}
+
+/* ============= END type-offices ============= */
+
+/* ============= BEGIN type-ownership ============= */
+
+.type-ownership {
+  border-bottom: 1px solid #bcbebf;
+  padding: 0 0 2px;
+
+  &__ttl {
+    float: left;
+    font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+    font-size: 13px;
+    color: @input-color;
+  }
+  &__dsc {
+    float: right;
+    position: relative;
+    font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+    font-size: 13px;
+    color: @main_text;
+    cursor: pointer;
+    min-width: 304px;
+    z-index: 99999;
+
+    &:hover {
+      .arrow {
+        border-color: @input-icon-hover transparent transparent;
+      }
+    }
+
+  }
+
+  .active {
+  .type-ownership__dsc-arrow {
+    background: @bg-bright;
+  }
+    .arrow {
+      border-color: transparent transparent @border;
+      border-width: 0 6px 7px;
+
+    }
+
+    &:hover {
+      .arrow {
+        border-color: transparent transparent @input-icon-hover !important;
+      }
+    }
+
+  }
+
+  &__dsc-name {
+    padding: 0 30px 0 0;
+  }
+  &__dsc-arrow {
+    right: 0;
+    position: absolute;
+    top: -5px;
+    width: 24px;
+    height: 24px;
+
+    .arrow {
+      left: 6px;
+      top: 10px;
+    }
+
+  }
+  &__dropdown {
+    position: absolute;
+    left: -12px;
+    top: 19px;
+    background: @bg-bright;
+    padding: 6px 28px 6px 6px;
+    display: none;
+  }
+  &__dropdown-item {
+    padding: 8px 6px;
+
+    &:hover {
+      background: @body_bg;
+      color: @link-color-active;
+    }
+  }
+}
+
+/* ============= END type-ownership ============= */
+
+/* ============= BEGIN b-checkbox (iCheck) ============= */
+
+.icheckbox {
+  display: inline-block;
+  *display: inline;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+  width: 19px;
+  height: 18px;
+  background: url('../img/design/b-checkbox-sprite.png') no-repeat 0 0;
+  border: none;
+  cursor: pointer;
+  background-color: @body_bg;
+}
+.icheckbox.checked {
+  background-position: -21px 0;
+}
+/*
+.icheckbox.hover {
+  background-position: -24px 0; - you can set the view for Hover
+}
+.icheckbox.disabled {
+  background-position: -72px 0;
+  cursor: default;
+}
+.icheckbox.checked.disabled {
+  background-position: -96px 0; - You can set the form for freezing state
+}
+*/
+
+.b-checkbox {
+
+  &__label {
+    .display_flex();
+    .align-items_center();
+    cursor: pointer;
+  }
+
+  &__ttl {
+    font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+    font-size: 15px;
+    color: @link-color;
+    margin: 0 0 0 9px;
+  }
+}
+
+/* ============= END b-checkbox (iCheck) ============= */
+
+/* ============= BEGIN link ============= */
+
+.link {
+  color: @link-color-active;
+  font-size: 15px;
+  font-family: Arial, Helvetica, Tahoma, Verdana, Sans-Serif;
+  text-decoration: underline;
+
+  &:hover {
+    color: @button-color;
+  }
+}
+
+/* ============= END link ============= */
+
+/* ============= BEGIN authorized ============= */
+
+.authorized {
+  .display_flex();
+  .align-items_center();
+
+  &__login-link, &__exit-link {
+    font-size: 17px;
+    color: @link-color-active;
+    font-family: @font-family-title;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__login {
+    border-right: 1px solid @line;
+    padding: 4px 15px 4px 0;
+    .align-items_center();
+    .display_flex();
+  }
+  &__exit-link {
+    color: @link-color;
+  }
+  &__exit {
+    padding: 4px 0 4px 15px;
+    .align-items_center();
+    .display_flex();
+
+    .icon {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    &:hover {
+      .icon { color: @title-color }
+      .authorized__exit-link {
+        color: @title-color;
+        text-decoration: none;
+      }
+    }
+  }
+  &__exit-ttl {
+    padding: 0 0 0 6px;
+  }
+}
+
+/* ============= END authorized ============= */
+
+
+
+
+
+
+

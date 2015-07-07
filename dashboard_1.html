@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наша почта</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <div class="body-layout">
+            <nav class="clearfix">
+                <div class="logo"><a href="/"><img src="img/design/logo.png" width="41" height="38" alt=""/></a></div>
+                <div class="mobile_item"><span class="icon icon-burger"></span></div>
+                <ul class="nav-list clearfix">
+                    <li class="nav-item"><a class="nav-link" href="#">Частным клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Бизнес-клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tracking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Отделения</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#">О компании</a></li>-->
+                </ul>
+            </nav>
+            <div class="authorization">
+                <div class="authorization__login">
+                    <span class="icon icon-key_2"></span>
+                    <span class="authorization__login-ttl"><a class="authorization__login-link" href="#">Вход</a></span>
+                </div>
+                <div class="authorization__reg">
+                    <span class="authorization__reg-ttl"><a class="authorization__reg-link" href="#">Регистрация</a></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="dashboard-img dashboard-img--my-info">
+            <!--<img class="main-img__w" src="img/content/main_img.jpg" alt=""/>-->
+            <h2 class="my-information">Мои данные</h2>
+            <div class="my-information__line"></div>
+            <menu class="menu">
+                <div class="body-layout">
+                    <div class="menu__ttl">Личный кабинет</div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" data-scroll="point_1" href="#">Мои накладные</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link" data-scroll="point_2" href="#">Архив</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link active" data-scroll="point_3" href="#">Мои данные</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link" data-scroll="point_4" href="#">Вызвать курьера</a></li>
+                    </ul>
+                </div>
+            </menu>
+        </div>
+        <section class="dashboard">
+            <div class="body-layout">
+                <div class="dashboard__area dashboard-form">
+                    <div class="dashboard-form__left">
+                        <div class="dashboard-form__box">
+                            <div class="dashboard-form__ttl">Личные данные</div>
+                            <div class="dashboard-form__row dashboard-form__row--double">
+                                <div class="dashboard-form__col">
+                                    <select class="b-select" name="" id="">
+                                        <option value="s1">Мужской</option>
+                                        <option value="s2">Женский</option>
+                                    </select>
+                                </div>
+                                <div class="dashboard-form__col">
+                                    <div class="b-input-datapicker"><input class="datapic_init" type="text" placeholder="Введите номер накладной"><span class="icon icon-calendar_3 datapic_init-bt"></span></div>
+                                </div>
+                            </div>
+                            <div class="dashboard-form__row">
+                                <div class="dashboard-form__col"><div class="b-input"><input type="text" placeholder="Имя" /></div></div>
+                            </div>
+                            <div class="dashboard-form__row">
+                                <div class="dashboard-form__col"><div class="b-input"><input type="text" placeholder="Фамилия"/></div></div>
+                            </div>
+                            <div class="dashboard-form__row">
+                                <div class="dashboard-form__col"><div class="b-input"><input type="text" placeholder="Отчество"/></div></div>
+                            </div>
+                        </div>
+                        <div class="dashboard-form__box">
+                            <div class="dashboard-form__ttl">Паспортные данные</div>
+                            <div class="dashboard-form__row dashboard-form__row--double">
+                                <div class="dashboard-form__col dashboard-form__col--mini">
+                                    <div class="b-input"><input type="text" placeholder="СЕРИЯ"/></div>
+                                </div>
+                                <div class="dashboard-form__col">
+                                    <div class="b-input-datapicker"><input class="datapic_init" type="text" placeholder="Номер"><span class="icon icon-calendar_3 datapic_init-bt"></span></div>
+                                </div>
+                            </div>
+                            <div class="dashboard-form__row dashboard-form__row--double">
+                                <div class="dashboard-form__col fifty-percent"><div class="b-input-datapicker"><input class="datapic_init" type="text" placeholder="Дата выдачи"><span class="icon icon-calendar_3 datapic_init-bt"></span></div></div>
+                                <div class="dashboard-form__col fifty-percent"><div class="b-input"><input type="text" placeholder="Место выдачи" /></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-form__right">
+                        <div class="dashboard-form__box">
+                            <div class="dashboard-form__ttl">Телефоны <span class="icon icon-plus_2"></span></div>
+                            <div class="dashboard-form__row">
+                                <div class="dashboard-form__col">
+                                    <div class="b-input"><input type="text" placeholder="Телефон" /></div>
+                                </div>
+                            </div>
+                            <div class="dashboard-form__row dashboard-form__col--added template_phone">
+                                <div class="dashboard-form__col">
+                                    <div class="b-input">
+                                        <input type="text" placeholder="Телефон" />
+                                        <span class="icon icon-trash_3"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dashboard-form__box">
+                            <div class="dashboard-form__ttl">Вход в личный кабинет</div>
+                            <div class="dashboard-form__row">
+                                <div class="dashboard-form__col">
+                                    <div class="b-input"><input type="text" placeholder="Телефон" /></div>
+                                </div>
+                            </div>
+                            <div class="dashboard-form__row">
+                                <div class="dashboard-form__col">
+                                    <div class="b-input"><input type="text" placeholder="Email" /></div>
+                                </div>
+                            </div>
+                            <div class="dashboard-form__row">
+                                <div class="dashboard-form__col">
+                                    <div class="b-input b-input-pass"><input type="password" placeholder="Пароль"/><a href="#" class="link">показать пароль</a></div>
+                                </div>
+                            </div>
+                            <div class="dashboard-form__row">
+                                <div class="dashboard-form__col">
+                                    <div class="b-input"><input type="text" placeholder="Новый пароль" /></div>
+                                </div>
+                            </div>
+                            <div class="dashboard-form__row">
+                                <div class="dashboard-form__col">
+                                    <div class="b-input"><input type="text" placeholder="Повторите пароль" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard__btns">
+                    <div class="dashboard__btns-l">
+                        <div class="b-button-red"><button type="submit" class="b-button-red__ttl">Сохранить</button></div>
+                    </div>
+                    <div class="dashboard__btns-r">
+                        <div class="b-button-gray"><button type="submit" class="b-button-gray__ttl">Отмена</button></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer footer-img">
+            <div class="body-layout">
+                <div class="footer-l">
+                    <div class="footer-top">
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Компания</h3></li>
+                            <!--<li class="footer__item"><a class="footer__item-link" href="#">О компании</a></li>-->
+                            <li class="footer__item"><a class="footer__item-link" href="#">Контакты</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Вакансии</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Частным клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как отправить посылку</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Бизнес-клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как стать нашим клиентом</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Плюсы регистрации</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Работа с нами on-line</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Тracking</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Поиск отделений</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Калькулятор</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Мобильное приложение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom clearfix">
+                        <div class="footer-bottom-l clearfix">
+                            <div class="footer-logo"><a href="/"><img src="img/design/logo.png" width="41" height="59" alt=""/></a></div>
+                            <div class="footer-bottom-l__dsc">
+                                <p>
+                                    <strong>ООО “ Наша почта”</strong><br>
+                                    012345, г. Минск,<br>
+                                    ул. (ххх) ххх хх хх<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-bottom-r clearfix">
+                            <div class="footer-bottom-r__dsc">
+                                <p>
+                                    <strong>Поддержка клиентов</strong><br>
+                                    тел.: (ххх) ххх хх хх<br>
+                                    e-mail: nasha_pocta@xxx.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-r">
+                    <div class="feedback">
+                        <form action="">
+                            <h3 class="feedback__ttl">Обратная связь</h3>
+                            <div class="feedback__row feedback__row--first">
+                                <div class="b-input"><input type="text" placeholder="Имя"/></div>
+                                <div class="b-input"><input type="text" placeholder="Телефон"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><input type="text" placeholder="Тема"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><textarea name="" placeholder="Текст"></textarea></div>
+                            </div>
+                             <div class="feedback__btn"><button type="submit" class="feedback__btn-ttl">Отправить</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="js/main.js"></script>
+<script>
+    $(document).ready(function () {
+        // select2
+        $('.dashboard .b-select').select2({
+            placeholder: "Пол",
+            width: "100%"
+        });
+        // datapicker
+        $(".datapic_init").datepicker();
+        $(".datapic_init-bt").on("click", function () {
+            $(this).parents(".b-input-datapicker").find(".datapic_init").datepicker("show");
+        });
+
+        //b-input-pass
+        $('.b-input-pass .link').click(function(e) {
+            e.preventDefault();
+            if($(this).prev('input').attr('type') == 'password') {
+                $(this).prev('input').attr('type', 'text');
+                $(this).text('скрыть пароль');
+            } else {
+                $(this).prev('input').attr('type', 'password');
+                $(this).text('показать пароль');
+            }
+        });
+
+        // adding fields
+        $('.dashboard-form__ttl .icon').on('click', function() {
+            var thisEl = $(this).parents('.dashboard-form__box');
+            var cloneEl =  $('.template_phone:first', thisEl).clone();
+            var appendEl = cloneEl.clone().fadeIn("slow").appendTo(thisEl);
+
+        });
+        $('.dashboard-form__box').on('click', '.dashboard-form__col--added .icon', function() {
+            $(this).parents('.dashboard-form__row').fadeOut(function(){
+                $(this).remove("slow")
+            });
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наша почта</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <div class="body-layout">
+            <nav class="clearfix">
+                <div class="logo"><a href="/"><img src="img/design/logo.png" width="41" height="38" alt=""/></a></div>
+                <div class="mobile_item"><span class="icon icon-burger"></span></div>
+                <ul class="nav-list clearfix">
+                    <li class="nav-item"><a class="nav-link" href="#">Частным клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Бизнес-клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tracking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Отделения</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#">О компании</a></li>-->
+                </ul>
+            </nav>
+            <div class="authorized">
+                <div class="authorized__login">
+                    <span class="authorized__login-ttl"><a href="#" class="authorized__login-link">Грицюк Юлия</a></span>
+                </div>
+                <div class="authorized__exit">
+                    <span class="icon icon-log_out_3"></span>
+                    <span class="authorized__exit-ttl"><a href="#" class="authorized__exit-link">Выход</a></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="dashboard-img dashboard-img-tr main-img--border dashboard-img--tracking">
+                <!--<img class="main-img__w" src="img/content/main_img.jpg" alt=""/>-->
+                <h2 class="my-information track-tittle">Tracking</h2>
+                <div class="my-information__line track-line"></div>
+        </div>
+        <section class="dashboard">
+            <div class="body-layout">
+                <div class="heading-frm">
+                    <div class="b-input-search draft-inpt left"><input type="text" placeholder="Введите номер накладной"><span class="icon icon-magnifier_2"></span></div>
+                </div>
+                <div class="clearfix cont-mgt">
+                    <div class="address-info__container1 ">
+                        <div class="address-info__plus waybill-area">
+                            Накладная <span class="numb-wbl">№12345678</span>
+                        </div>
+                        <div class="address-info address-info-w">
+                            <div class="address-info__head address-info__head--tracking">
+                                <div class="address-info__head--icon">
+                                    <span class="icon-department_2 dep_3-style"></span>
+                                </div>
+                                <div class="address-info__head--contacts tracking__head--pl">
+                                    <span class="sending-form__text-sr waybill-sender__txt trackhead-mg">Откуда</span>
+                                    <div class="address-info__tittle--st tracking-area__info">
+                                        Гомель - 03
+                                    </div>
+                                    <span class="tracking-form__text-sr waybill-sender__txt">Дата отправки:</span>
+                                    <span class="date-del date-del-track">13.03.2015 в 9:15</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="address-info address-info-w">
+                            <div class="address-info__head address-info__head--tracking">
+                                <div class="address-info__head--icon">
+                                    <span class="icon-door_2 dep_3-style"></span>
+                                </div>
+                                <div class="address-info__head--contacts tracking__head--pl">
+                                    <span class="sending-form__text-sr waybill-sender__txt trackhead-mg">Куда</span>
+                                    <div class="address-info__tittle--st tracking-area__info">
+                                        Минск <span class="dooring">до двери</span>
+                                    </div>
+                                    <span class="tracking-form__text-sr waybill-sender__txt">Дата доставки:</span>
+                                    <span class="date-del date-del-track">15.03.2015</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sc-wrap">
+                        <div class="stat-container">
+                            <div class="address-info__plus waybill-area">
+                                <div class="back-serv-block way-btn">
+                                    <span class="del-block__head--txt1">Текущий статус</span><span class="del-block__head--txt2">В пути</span>
+                                    <div class="type-ownership__dsc-arrow status-arrow"><span class="arrow ar-sev way-aw"></span></div>
+                                </div>
+                                <div class="stat-steps">
+                                    <div class="stat-step__numb step-active">1</div>
+                                    <div class="stat-step__numb step-active">2</div>
+                                    <div class="stat-step__numb">3</div>
+                                    <div class="stat-step__numb">4</div>
+                                </div>
+                            </div>
+                            <div class="del-block">
+                                <div class="del-block__action">
+                                <span class="del-block__action--txt1">
+                                     Дата и время
+                                </span>
+                                <span class="del-block__action--txt1">
+                                    Действия
+                                </span>
+                                <span class="del-block__action--txt1">
+                                    Место
+                                </span>
+                                </div>
+                                <div class="delivery-wrap">
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt2">
+                                         14.03.2015  <span class="del-time">09:00</span>
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Отправлен со склада
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Гомель - 04
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt2">
+                                         14.03.2015  <span class="del-time">09:00</span>
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Отправлен со склада
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Гомель - 04
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt2">
+                                         14.03.2015  <span class="del-time">09:00</span>
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Отправлен со склада
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Гомель - 04
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt2">
+                                         14.03.2015  <span class="del-time">09:00</span>
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Отправлен со склада
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Гомель - 04
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt2">
+                                         14.03.2015  <span class="del-time">09:00</span>
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Отправлен со склада
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Гомель - 04
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt2">
+                                         14.03.2015  <span class="del-time">09:00</span>
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Отправлен со склада
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Гомель - 04
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt2">
+                                         14.03.2015  <span class="del-time">09:00</span>
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Отправлен со склада
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Гомель - 04
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt2">
+                                         14.03.2015  <span class="del-time">09:00</span>
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Отправлен со склада
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Гомель - 04
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt2">
+                                         14.03.2015  <span class="del-time">09:00</span>
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Отправлен со склада
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Гомель - 04
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt2">
+                                         14.03.2015  <span class="del-time">09:00</span>
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Отправлен со склада
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Гомель - 04
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt2">
+                                         14.03.2015  <span class="del-time">09:00</span>
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Отправлен со склада
+                                    </span>
+                                    <span class="del-block__action--txt2">
+                                        Гомель - 04
+                                    </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="cc-wrap">
+                        <div class="cargo-container">
+                            <div class="address-info__plus waybill-area waybill-area__carg">
+                                <div class="back-serv-block cargo-btn">
+                                    <span class="del-block__head--txt1">Грузовых мест</span><span class="del-block__head--txt2" id="track-cargo-pl">2</span>
+                                    <div class="type-ownership__dsc-arrow cargo-arrow"><span class="arrow ar-sev cg-aw"></span></div>
+                                </div>
+                            </div>
+                            <div class="del-block track-overall">
+                                <div class="del-block__action">
+                                <span class="del-block__action--txt3">
+                                     Номер грузового
+                                </span>
+                                <span class="del-block__action--txt3">
+                                    Габариты
+                                </span>
+                                <span class="del-block__action--txt3">
+                                    Вес
+                                </span>
+                                </div>
+                                <div class="del-stat-wrap track-overall">
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt4">
+                                         #23423
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        25 x 20 x 15
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        26 кг
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt4">
+                                         #23423
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        25 x 20 x 15
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        26 кг
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt4">
+                                         #23423
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        25 x 20 x 15
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        26 кг
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt4">
+                                         #23423
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        25 x 20 x 15
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        26 кг
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt4">
+                                         #23423
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        25 x 20 x 15
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        26 кг
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt4">
+                                         #23423
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        25 x 20 x 15
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        26 кг
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt4">
+                                         #23423
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        25 x 20 x 15
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        26 кг
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt4">
+                                         #23423
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        25 x 20 x 15
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        26 кг
+                                    </span>
+                                    </div>
+                                    <div class="del-block__status">
+                                    <span class="del-block__action--txt4">
+                                         #23423
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        25 x 20 x 15
+                                    </span>
+                                    <span class="del-block__action--txt4">
+                                        26 кг
+                                    </span>
+                                    </div>
+                                </div>
+                                <div id="overall" class="track-overall">
+                                <span class="del-block__action--txt4">
+                                     Всего:
+                                </span>
+                                <span class="del-block__action--txt4">
+                                    1,2 м&sup3
+                                </span>
+                                <span class="del-block__action--txt4">
+                                    26 кг
+                                </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer footer-img">
+            <div class="body-layout">
+                <div class="footer-l">
+                    <div class="footer-top">
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Компания</h3></li>
+                            <!--<li class="footer__item"><a class="footer__item-link" href="#">О компании</a></li>-->
+                            <li class="footer__item"><a class="footer__item-link" href="#">Контакты</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Вакансии</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Частным клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как отправить посылку</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Бизнес-клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как стать нашим клиентом</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Плюсы регистрации</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Работа с нами on-line</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Тracking</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Поиск отделений</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Калькулятор</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Мобильное приложение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom clearfix">
+                        <div class="footer-bottom-l clearfix">
+                            <div class="footer-logo"><a href="/"><img src="img/design/logo.png" width="41" height="59" alt=""/></a></div>
+                            <div class="footer-bottom-l__dsc">
+                                <p>
+                                    <strong>ООО “ Наша почта”</strong><br>
+                                    012345, г. Минск,<br>
+                                    ул. (ххх) ххх хх хх<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-bottom-r clearfix">
+                            <div class="footer-bottom-r__dsc">
+                                <p>
+                                    <strong>Поддержка клиентов</strong><br>
+                                    тел.: (ххх) ххх хх хх<br>
+                                    e-mail: nasha_pocta@xxx.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-r">
+                    <div class="feedback">
+                        <form action="">
+                            <h3 class="feedback__ttl">Обратная связь</h3>
+                            <div class="feedback__row feedback__row--first">
+                                <div class="b-input"><input type="text" placeholder="Имя"/></div>
+                                <div class="b-input"><input type="text" placeholder="Телефон"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><input type="text" placeholder="Тема"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><textarea name="" placeholder="Текст"></textarea></div>
+                            </div>
+                             <div class="feedback__btn"><button type="submit" class="feedback__btn-ttl">Отправить</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+
+
+        // delivery__dropdown
+
+        $('.way-btn').click(function() {
+            if($('.delivery-wrap').is(':hidden')) {
+                $('.way-btn').addClass('active');
+                $('.way-aw').addClass('act-sev');
+                $('.delivery-wrap').show();
+            } else {
+                $('.delivery-wrap').hide();
+                $('.way-btn').removeClass('active');
+                $('.way-aw').removeClass('act-sev');
+            }
+        });
+
+
+
+        // cargo__dropdown
+
+        $('.cargo-btn').click(function() {
+            if($('.del-stat-wrap').is(':hidden')) {
+                $('.cargo-btn').addClass('active');
+                $('.cg-aw').addClass('act-sev');
+                $('.del-stat-wrap').show();
+            } else {
+                $('.del-stat-wrap').hide();
+                $('.cargo-btn').removeClass('active');
+                $('.cg-aw').removeClass('act-sev');
+            }
+        });
+
+        //cargo number of places
+
+
+        var n = $('.del-stat-wrap .del-block__status').length;
+        $('#track-cargo-pl').text(n);
+
+        // cargo-container scroll
+
+        $(window).load(function(){
+            $(".cc-wrap").mCustomScrollbar({
+                axis: "x",
+                theme: "dark-3",
+                autoHideScrollbar: true
+            });
+            $(".sc-wrap").mCustomScrollbar({
+                axis: "x",
+                theme: "dark-3",
+                autoHideScrollbar: true
+            });
+            $(".del-stat-wrap").mCustomScrollbar({
+                axis: "y",
+                theme: "dark-3"
+            });
+            $(".delivery-wrap").mCustomScrollbar({
+                axis: "y",
+                theme: "dark-3"
+            });
+        });
+
+        $(window).on('resize', function() {
+            var ww = $(window).width();
+            var blw = $('.cc-wrap').width();
+            var scw = $('.sc-wrap').width();
+            if (ww <= 876) {
+                $('.cargo-container').width(876);
+            } else {
+                $('.cargo-container').width(blw);
+            }
+            if (ww <= 876) {
+                $('.stat-container').width(876);
+            } else {
+                $('.stat-container').width(scw);
+            }
+        });
+
+        if ($(window).width() <= 876) {
+            $(window).load(function() {
+                $('.cargo-container').width(876);
+            });
+        };
+        if ($(window).width() <= 876) {
+            $(window).load(function() {
+                $('.stat-container').width(876);
+            });
+        };
+    });
+</script>
+</body>
+</html>

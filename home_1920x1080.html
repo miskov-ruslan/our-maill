@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наша почта</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/jquery.stellar.min.js"></script>
+
+</head>
+<body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="body-layout">
+                <nav class="clearfix">
+                    <div class="logo"><a href="/"><img src="img/design/logo.png" width="41" height="38" alt=""/></a></div>
+                    <div class="mobile_item"><span class="icon icon-burger"></span></div>
+                    <ul class="nav-list clearfix">
+                        <li class="nav-item"><a class="nav-link" href="#">Частным клиентам</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">Бизнес-клиентам</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Tracking</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Отделения</a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="#">О компании</a></li>-->
+                    </ul>
+                </nav>
+                <div class="authorization">
+                    <div class="authorization__login">
+                        <span class="icon icon-key_2"></span>
+                        <span class="authorization__login-ttl"><a class="authorization__login-link" href="#">Вход</a></span>
+                    </div>
+                    <div class="authorization__reg">
+                        <span class="authorization__reg-ttl"><a class="authorization__reg-link" href="#">Регистрация</a></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="main-img"></div>
+            <section class="track-package">
+                <div class="body-layout">
+                    <div class="track-package__box">
+                        <h2 class="track-package__box-ttl">Отследить посылку</h2>
+                        <div class="track-package__box-form">
+                            <input class="track-package__input" placeholder="Введите трек номер..." type="text"/>
+                            <div class="track-package__btn"><button type="submit" class="track-package__btn-ttl">Отследить</button></div>
+                        </div>
+                    </div>
+                    <div class="track-package__box">
+                        <h2 class="track-package__box-ttl">Рассчитать стоимость</h2>
+                        <div class="track-package__box-form">
+                            <div class="track-package__box-form-top">
+                                <div class="b-input"><input class="track-package__input" placeholder="Откуда" type="text"/><span class="icon icon-magnifier_2"></span></div>
+                                <div class="b-input"><input class="track-package__input" placeholder="Куда" type="text"/><span class="icon icon-magnifier_2"></span></div>
+                            </div>
+                            <div class="track-package__box-form-bottom">
+                                <div class="b-input-wr">
+                                    <div class="b-input"><input class="track-package__input" placeholder="Ширина" type="text"/></div>
+                                    <div class="b-input"><input class="track-package__input" placeholder="Высота" type="text"/></div>
+                                </div>
+                                <div class="b-input-wr">
+                                    <div class="b-input"><input class="track-package__input" placeholder="Глубина" type="text"/></div>
+                                    <div class="b-input"><input class="track-package__input" placeholder="Вес" type="text"/></div>
+                                </div>
+                            </div>
+                            <div class="track-package__btn"><button type="submit" class="track-package__btn-ttl">Рассчитать</button></div>
+
+                        </div>
+                    </div>
+                    <div class="track-package__box">
+                        <h2 class="track-package__box-ttl">Ближайшее отделение</h2>
+                        <div id="map-canvas"></div>
+                        <div class="track-package__box-link"><a href="#">Показать карту</a></div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-company">
+                <div class="about-company__layer_1" data-stellar-background-ratio="0.7"></div>
+                <div class="about-company__layer_2" data-stellar-background-ratio="0.5"></div>
+                <div class="body-layout">
+                    <p class="about-company__desc">
+                        Компания “Наша почта” предоставляет услуги доставки грузов и корреспонденции бизнес-клиентам и частным пользователям по всей Белорусии. Наша миссия - быть национальным лидером в сфере экспресс доставки грузов и документов за счет быстрого, доступного, высокотехнологического и  простого сервиса
+                        с целью поддержки, развития и налаживания контактов для бизнеса
+                        и граждан и соблюдения интересов акционера.
+                    </p>
+                </div>
+            </section>
+            <section class="new-offices">
+                <div class="body-layout">
+                        <div class="new-offices__layer_1 motion-pic"><img src="/img/design/new-offices_layer1.png" alt=""/></div>
+                        <div class="new-offices__layer_2 motion-pic"><img src="/img/design/new-offices_layer2.png" alt=""/></div>
+                        <div class="new-offices__layer_3 motion-pic"><img src="/img/design/new-offices_layer3.png" alt=""/></div>
+                        <div class="new-offices__layer_4 motion-pic"><img src="/img/design/new-offices_layer4.png" alt=""/></div>
+                    <div class="new-offices__info">
+                        <h2 class="new-offices__info-ttl">Новые<br>отделения</h2>
+                        <p class="new-offices__info-dsc">
+                            Их количество постоянно растет - мы стремимся быть ближе к Вам. В отделениях налажен процесс оформления и выдачи, предлагаются дополнительные услуги для Вашего удобства: упаковка, хранение и т.п.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="quality-service">
+                <div class="body-layout">
+                    <div class="quality-service__layer_1 motion-pic"><img src="img/design/quality-service_layer1.png" alt=""/></div>
+                    <div class="quality-service__layer_2 motion-pic"><img src="img/design/quality-service_layer2.png" alt=""/></div>
+                    <div class="quality-service__info">
+                        <h2 class="quality-service__info-ttl">Новое<br>качество<br>обслуживания</h2>
+                        <p class="quality-service__info-dsc">
+                            Забудьте о капризных бюрократических "почтовых рабочих".
+                            В наших отделениях работают профессионалы, нет
+                            очередей и раздражительности.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="new-services">
+                <div class="body-layout">
+                    <div class="new-services__layer_1 motion-pic"><img src="img/design/new-services_layer1.png" alt=""/></div>
+                    <div class="new-services__layer_2 motion-pic"><img src="img/design/new-services_layer2.png" alt=""/></div>
+                    <div class="new-services__layer_3 motion-pic"><img src="img/design/new-services_layer3.png" alt=""/></div>
+                    <div class="new-services__info">
+                        <h2 class="new-services__info-ttl">Новые<br>сервисы</h2>
+                        <p class="new-services__info-dsc">
+                            Контроль за передвижением груза, приложение к мобильным устройствам, онлайн-калькулятор для расчета стоимости
+                            отправки и срока доставки.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section class="tariffs">
+                <div class="body-layout">
+                    <div class="tariffs__layer_1 motion-pic"><img src="img/design/tariffs_layer1.png" alt=""/></div>
+                    <div class="tariffs__layer_2 motion-pic"><img src="img/design/tariffs_layer2.png" alt=""/></div>
+                    <div class="tariffs__layer_3 motion-pic"><img src="img/design/tariffs_layer3.png" alt=""/></div>
+                    <div class="tariffs__info">
+                        <h2 class="tariffs__info-ttl">Прозрачные<br>тарифы и<br>программа<br>лояльности</h2>
+                        <p class="tariffs__info-dsc">
+                            Никаких скрытых расходов и никаких сюрпризов
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="body-layout">
+                    <div class="footer-l">
+                        <div class="footer-top">
+                            <ul class="footer__list">
+                                <li class="footer__item"><h3 class="footer__item-ttl">Компания</h3></li>
+                                <!--<li class="footer__item"><a class="footer__item-link" href="#">О компании</a></li>-->
+                                <li class="footer__item"><a class="footer__item-link" href="#">Контакты</a></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Вакансии</a></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+                            </ul>
+                            <ul class="footer__list">
+                                <li class="footer__item"><h3 class="footer__item-ttl">Частным клиентам</h3></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Как отправить посылку</a></li>
+                            </ul>
+                            <ul class="footer__list">
+                                <li class="footer__item"><h3 class="footer__item-ttl">Бизнес-клиентам</h3></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Как стать нашим клиентом</a></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Плюсы регистрации</a></li>
+                            </ul>
+                            <ul class="footer__list">
+                                <li class="footer__item"><h3 class="footer__item-ttl">Работа с нами on-line</h3></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Тracking</a></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Поиск отделений</a></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Калькулятор</a></li>
+                                <li class="footer__item"><a class="footer__item-link" href="#">Мобильное приложение</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-bottom clearfix">
+                            <div class="footer-bottom-l clearfix">
+                                <div class="footer-logo"><a href="/"><img src="img/design/logo_footer.png" width="64" height="59" alt=""/></a></div>
+                                <div class="footer-bottom-l__dsc">
+                                    <p>
+                                        <strong>ООО “ Наша почта”</strong><br>
+                                        012345, г. Минск,<br>
+                                        ул. (ххх) ххх хх хх<br>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="footer-bottom-r clearfix">
+                                <div class="footer-bottom-r__dsc">
+                                    <p>
+                                        <strong>Поддержка клиентов</strong><br>
+                                        тел.: (ххх) ххх хх хх<br>
+                                        e-mail: nasha_pocta@xxx.com
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-r">
+                        <div class="feedback">
+                            <form action="">
+                                <h3 class="feedback__ttl">Обратная связь</h3>
+                                <div class="feedback__row feedback__row--first">
+                                    <div class="b-input"><input type="text" placeholder="Имя"/></div>
+                                    <div class="b-input"><input type="text" placeholder="Телефон"/></div>
+                                </div>
+                                <div class="feedback__row">
+                                    <div class="b-input"><input type="text" placeholder="Тема"/></div>
+                                </div>
+                                <div class="feedback__row">
+                                    <div class="b-input"><textarea name="" placeholder="Текст"></textarea></div>
+                                </div>
+                                <div class="feedback__btn"><button type="submit" class="feedback__btn-ttl">Отправить</button></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            //layout parallax
+            $.stellar({
+                horizontalScrolling: false,
+                verticalOffset: 0
+            });
+
+        });
+    </script>
+</body>
+</html>

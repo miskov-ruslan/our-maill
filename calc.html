@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наша почта</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/icheck.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <div class="body-layout">
+            <nav class="clearfix">
+                <div class="logo"><a href="/"><img src="img/design/logo.png" width="41" height="38" alt=""/></a></div>
+                <div class="mobile_item"><span class="icon icon-burger"></span></div>
+                <ul class="nav-list clearfix">
+                    <li class="nav-item"><a class="nav-link" href="#">Частным клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Бизнес-клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tracking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Отделения</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#">О компании</a></li>-->
+                </ul>
+            </nav>
+            <div class="authorized">
+                <div class="authorized__login">
+                    <span class="authorized__login-ttl"><a href="#" class="authorized__login-link">Грицюк Юлия</a></span>
+                </div>
+                <div class="authorized__exit">
+                    <span class="icon icon-log_out_3"></span>
+                    <span class="authorized__exit-ttl"><a href="#" class="authorized__exit-link">Выход</a></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="body-layout calc-cost">
+            <div class="head-calc-wrap">
+                <div class="head-calc-tittle">
+                    Рассчитаная стоимость доставки
+                </div>
+                <div class="head-calc-body">
+                    <p class="head-calc-body__txt">Доставка:<span class="calc-del-cost">216 000 руб.</span></p>
+
+                    <p class="head-calc-body__txt">Комиссия:<span class="calc-del-cost">43 000 руб.</span></p>
+
+                    <p class="head-calc-body__txt">Обратная доставка<span class="calc-del-cost">230 123 руб.</span></p>
+                </div>
+                <div class="head-calc-total">
+                    Итого
+                    <span class="head-calc-total__cost">489 000 руб.</span>
+                    <div class="dashboard__btns-l calc-call">
+                        <div class="b-button-red"><span class="b-button-red__ttl draft-btn__f">Вызвать курьера</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="del-way">
+            <div class="body-layout">
+                <div class="head-calc-wrap">
+                    <h2 class="my-information del-align">Задайте маршрут доставки</h2>
+                    <div class="my-information__line del-line"></div>
+                    <div class="delivery-route__head">
+                        <div class="delivery-route__name">От двери</div>
+                        <div class="delivery-route__name">От отделения</div>
+                        <div class="delivery-route__name">До отделения</div>
+                        <div class="delivery-route__name">До двери</div>
+                    </div>
+                    <div class="delivery-route">
+                        <div class="from-door">
+                            <div class="inside-del"></div>
+                        </div>
+                        <div class="fd-line"></div>
+                        <div class="from-office">
+                            <div class="inside-del"></div>
+                        </div>
+                        <div class="fo-line"></div>
+                        <div class="to-office">
+                            <div class="inside-del"></div>
+                        </div>
+                        <div class="to-line"></div>
+                        <div class="to-door">
+                            <div class="inside-del"></div>
+                        </div>
+                    </div>
+                    <div class="b-input-search calc-search-input"><input type="text" placeholder="Город отправления"><span class="icon icon-magnifier_2"></span></div>
+                    <div class="b-input-search calc-search-input calc-search-input__mgl"><input type="text" placeholder="Город Получения"><span class="icon icon-magnifier_2"></span></div>
+                        <div class="b-input calc-search-input">
+                            <label>Оглашенная стоимость
+                                <input type="text" placeholder="руб." class="payment">
+                            </label>
+                        </div>
+                        <div class="b-input calc-search-input calc-search-input__mgl">
+                            <label>Количество мест
+                                <input type="text" class="number-places">
+                            </label>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="package-types">
+            <h2 class="my-information del-align">Выберите тип упаковки</h2>
+            <div class="my-information__line del-line"></div>
+            <div class="package-types__wrap">
+                <div class="package-types__choose active-package">
+                    Стандартная упаковка
+                </div>
+                <div class="package-types__choose">
+                    Своя упаковка
+                </div>
+            </div>
+        </div>
+        <div class="package-size">
+            <div class="body-layout">
+                <div class="head-calc-wrap">
+                    <div class="b-input calc-search-input input-size">
+                        <label>Габариты
+                            <input type="text" class="number-places" placeholder="Высота, см">
+                            <input type="text" class="number-places" placeholder="Ширина, см">
+                            <input type="text" class="number-places" placeholder="Глубина, см">
+                        </label>
+                    </div>
+                    <div class="b-input calc-search-input input-weight">
+                        <label>Вес
+                            <input type="text" class="number-places input-w-width" placeholder="кг">
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="package-items">
+            <div class="package-items__head">
+                Дополнительная упаковка
+            </div>
+            <div class="package-items__container">
+                <div class="package-items__goods">
+                    <img src="img/content/item-1.png" alt="1"/>
+                    <div class="package-items__description">
+                        <span class="package-items__price">75 000 руб.</span>
+                        <span class="package-items__txt">
+                            Палетирование (1 паллета)
+                        </span>
+                    </div>
+                </div>
+                <div class="package-items__goods">
+                    <img src="img/content/item-2.png" alt="2"/>
+                    <div class="package-items__description">
+                        <span class="package-items__price">7 500 руб.</span>
+                        <span class="package-items__txt">
+                            Упаковка стрейч-пленкой
+                        </span>
+                    </div>
+                </div>
+                <div class="package-items__goods">
+                    <img src="img/content/item-3.png" alt="3"/>
+                    <div class="package-items__description">
+                        <span class="package-items__price">100 000 руб.</span>
+                        <span class="package-items__txt">
+                            Обрешетовка
+                        </span>
+                    </div>
+                </div>
+                <div class="package-items__goods">
+                    <img src="img/content/item-4.png" alt="4"/>
+                    <div class="added-item">x1</div>
+                    <div class="package-items__description">
+                        <span class="package-items__price">12 000 руб.</span>
+                        <span class="package-items__txt">
+                            Воздушно-пупырчатая пленка
+                        </span>
+                    </div>
+                </div>
+                <div class="package-items__goods">
+                    <img src="img/content/item-1.png" alt="1"/>
+                    <div class="package-items__description">
+                        <span class="package-items__price">75 000 руб.</span>
+                        <span class="package-items__txt">
+                            Палетирование (1 паллета)
+                        </span>
+                    </div>
+                </div>
+                <div class="package-items__goods">
+                    <img src="img/content/item-2.png" alt="2"/>
+                    <div class="package-items__description">
+                        <span class="package-items__price">7 500 руб.</span>
+                        <span class="package-items__txt">
+                            Упаковка стрейч-пленкой
+                        </span>
+                    </div>
+                </div>
+                <div class="package-items__goods">
+                    <img src="img/content/item-3.png" alt="3"/>
+                    <div class="package-items__description">
+                        <span class="package-items__price">100 000 руб.</span>
+                        <span class="package-items__txt">
+                            Обрешетовка
+                        </span>
+                    </div>
+                </div>
+                <div class="package-items__goods">
+                    <img src="img/content/item-1.png" alt="1"/>
+                    <div class="package-items__description">
+                        <span class="package-items__price"> 75 000 руб.</span>
+                        <span class="package-items__txt">
+                            Палетирование (1 паллета)
+                        </span>
+                    </div>
+                </div>
+                <div class="package-items__goods">
+                    <img src="img/content/item-2.png" alt="2"/>
+                    <div class="package-items__description">
+                        <span class="package-items__price">7 500 руб.</span>
+                        <span class="package-items__txt">
+                            Упаковка стрейч-пленкой
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="back-deliver">
+            <div class="body-layout">
+                <div class="head-calc-wrap">
+                    <h2 class="my-information del-align">Услуги обратной доставки</h2>
+                    <div class="my-information__line del-line"></div>
+                    <div class="back-deliver__blocks">
+                        <p class="back-deliver__blocks--txt">Наложенный платеж</p>
+                        <div class="b-checkbox tax-check">
+                            <label class="b-checkbox__label"><input type="checkbox" name="" checked></label>
+                        </div>
+                        <div class="b-input tax-input">
+                            <input type="text" class="tax-summary" placeholder="Высота, см">
+                        </div>
+                    </div>
+                    <div class="back-deliver__blocks">
+                        <p class="back-deliver__blocks--txt">Обратная доставка тары</p>
+                        <div class="b-checkbox tax-check">
+                            <label class="b-checkbox__label"><input type="checkbox" name=""></label>
+                        </div>
+                    </div>
+                    <div class="back-deliver__blocks">
+                        <p class="back-deliver__blocks--txt">Подтверждение получения</p>
+                        <div class="b-checkbox tax-check">
+                            <label class="b-checkbox__label"><input type="checkbox" name=""></label>
+                        </div>
+                    </div>
+                </div>
+                <div class="calculation">
+                    Рассчитать <br/> стоимость
+                </div>
+            </div>
+        </div>
+        <footer class="footer footer-img">
+            <div class="body-layout">
+                <div class="footer-l">
+                    <div class="footer-top">
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Компания</h3></li>
+                            <!--<li class="footer__item"><a class="footer__item-link" href="#">О компании</a></li>-->
+                            <li class="footer__item"><a class="footer__item-link" href="#">Контакты</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Вакансии</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Частным клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как отправить посылку</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Бизнес-клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как стать нашим клиентом</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Плюсы регистрации</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Работа с нами on-line</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Тracking</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Поиск отделений</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Калькулятор</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Мобильное приложение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom clearfix">
+                        <div class="footer-bottom-l clearfix">
+                            <div class="footer-logo"><a href="/"><img src="img/design/logo.png" width="41" height="59" alt=""/></a></div>
+                            <div class="footer-bottom-l__dsc">
+                                <p>
+                                    <strong>ООО “ Наша почта”</strong><br>
+                                    012345, г. Минск,<br>
+                                    ул. (ххх) ххх хх хх<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-bottom-r clearfix">
+                            <div class="footer-bottom-r__dsc">
+                                <p>
+                                    <strong>Поддержка клиентов</strong><br>
+                                    тел.: (ххх) ххх хх хх<br>
+                                    e-mail: nasha_pocta@xxx.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-r">
+                    <div class="feedback">
+                        <form action="">
+                            <h3 class="feedback__ttl">Обратная связь</h3>
+                            <div class="feedback__row feedback__row--first">
+                                <div class="b-input"><input type="text" placeholder="Имя"/></div>
+                                <div class="b-input"><input type="text" placeholder="Телефон"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><input type="text" placeholder="Тема"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><textarea name="" placeholder="Текст"></textarea></div>
+                            </div>
+                             <div class="feedback__btn"><button type="submit" class="feedback__btn-ttl">Отправить</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="js/main.js"></script>
+<script>
+    $('.b-checkbox input').iCheck();
+</script>
+<script>
+    $(document).ready(function(){
+       $('.from-door').on('click', function(){
+           $(this).children('.inside-del').toggleClass('active-route');
+           $('.delivery-route__name:first-child').toggleClass('active-bord');
+           $('.delivery-route__name:first-child').toggleClass('activetriangle');
+       });
+        $('.from-office').on('click', function(){
+            $(this).children('.inside-del').toggleClass('active-route');
+            $('.delivery-route__name:nth-child(2)').toggleClass('active-bord');
+            $('.delivery-route__name:nth-child(2)').toggleClass('activetriangle');
+        });
+
+        $('.to-office').on('click', function() {
+           if ($('.from-door .inside-del').hasClass('active-route')) {
+               $(this).children('.inside-del').toggleClass('active-route');
+               $('.delivery-route__name:nth-child(3), .delivery-route__name:nth-child(2)').toggleClass('active-bord');
+               $('.delivery-route__name:nth-child(3), .delivery-route__name:nth-child(2)').toggleClass('activetriangle');
+               $('.from-office .inside-del, .fo-line, .fd-line').toggleClass('active-route');
+           } else if ($('.from-office .inside-del').hasClass('active-route')) {
+               $(this).children('.inside-del').toggleClass('active-route');
+               $('.delivery-route__name:nth-child(3)').toggleClass('active-bord');
+               $('.delivery-route__name:nth-child(3)').toggleClass('activetriangle');
+               $('.fo-line').toggleClass('active-route');
+           }
+        });
+        $('.to-door').on('click', function() {
+            if ($('.from-door .inside-del').hasClass('active-route')) {
+                $(this).children('.inside-del').toggleClass('active-route');
+                $('.delivery-route__name:nth-child(3), .delivery-route__name:nth-child(2), .delivery-route__name:last-child').toggleClass('active-bord');
+                $('.delivery-route__name:nth-child(3), .delivery-route__name:nth-child(2), .delivery-route__name:last-child').toggleClass('activetriangle');
+                $('.from-office .inside-del, .to-office .inside-del, .fo-line, .fd-line, .to-line').toggleClass('active-route');
+            } else if ($('.from-office .inside-del').hasClass('active-route')) {
+                $(this).children('.inside-del').toggleClass('active-route');
+                $('.delivery-route__name:nth-child(3), .delivery-route__name:last-child').toggleClass('active-bord');
+                $('.delivery-route__name:nth-child(3), .delivery-route__name:last-child').toggleClass('activetriangle');
+                $('.fo-line, .to-line, .to-office .inside-del').toggleClass('active-route');
+            }
+        });
+
+        $('.from-door').on('click', function() {
+            if ($('.from-office .inside-del').hasClass('active-route')) {
+                $('.from-door .inside-del').removeClass('active-route');
+                $('.delivery-route__name:first-child').removeClass('activetriangle active-bord');
+            }
+        });
+
+
+        //scroll
+
+        $(window).load(function(){
+
+            $(function () {
+                var shag = Math.max.apply(Math, $(".package-items__container .package-items__goods").map(function () {
+                    return $(this).outerWidth(true);
+                }).get());
+                $(".package-items__container").mCustomScrollbar({
+                    axis: "x",
+                    theme: "dark-3",
+                    mouseWheel:{
+                        scrollAmount:"300"
+                    },
+                    advanced: {
+                        autoExpandHorizontalScroll: true,
+                        updateOnBrowserResize:true,
+                        updateOnContentResize:true
+                    },
+                    scrollButtons: {
+                        enable: true,
+                        scrollType: "stepped"
+                    },
+                    keyboard: {scrollType: "stepped"},
+                    snapAmount: shag,
+                    mouseWheel: {scrollAmount: shag},
+                    autoHideScrollbar: true
+                });
+            });
+        });
+
+
+        // calc-cost
+
+        $('.calculation').on('click', function() {
+           $('.calc-cost').show();
+        });
+
+        // package-types
+
+        if($(".package-types__wrap").length != 0) {
+            $('.package-types__choose').on('click', function() {
+                $('.package-types__choose.active-package').removeClass('active-package');
+                $(this).addClass('active-package');
+            });
+        }
+
+    });
+
+</script>
+</body>
+</html>

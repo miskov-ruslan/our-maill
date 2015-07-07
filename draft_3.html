@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Наша почта</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/fonts.css" type="text/css"/>
+    <link href="css/select2.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+    <link rel="SHORTCUT ICON" href="favicon.ico">
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/select2.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <header class="header">
+        <div class="body-layout">
+            <nav class="clearfix">
+                <div class="logo"><a href="/"><img src="img/design/logo.png" width="41" height="38" alt=""/></a></div>
+                <div class="mobile_item"><span class="icon icon-burger"></span></div>
+                <ul class="nav-list clearfix">
+                    <li class="nav-item"><a class="nav-link" href="#">Частным клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Бизнес-клиентам</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Tracking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Отделения</a></li>
+                    <!--<li class="nav-item"><a class="nav-link" href="#">О компании</a></li>-->
+                </ul>
+            </nav>
+            <div class="authorized">
+                <div class="authorized__login">
+                    <span class="authorized__login-ttl"><a href="#" class="authorized__login-link">Грицюк Юлия</a></span>
+                </div>
+                <div class="authorized__exit">
+                    <span class="icon icon-log_out_3"></span>
+                    <span class="authorized__exit-ttl"><a href="#" class="authorized__exit-link">Выход</a></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-container">
+        <div class="draftheading">
+            <!--<img class="main-img__w" src="img/content/main_img.jpg" alt=""/>-->
+            <menu class="menu">
+                <div class="body-layout">
+                    <div class="menu__ttl">Личный кабинет</div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link" data-scroll="point_1" href="#">Мои накладные</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link" data-scroll="point_2" href="#">Архив</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link" data-scroll="point_3" href="#">Мои данные</a></li>
+                        <li class="menu__item menu__item-ml"><a class="menu__link" data-scroll="point_4" href="#">Вызвать курьера</a></li>
+                    </ul>
+                </div>
+            </menu>
+        </div>
+        <section class="dashboard">
+            <div class="body-layout">
+                <div class="clearfix cont-mgt">
+                    <h2 class="my-information call-c">Вызов курьера</h2>
+                    <div class="address-info address-centring address-info__container1 cargo-cont-mob">
+                        <div class="waybill-area__info cargo-head-bg cour-lh">
+                            Отправитель
+                            <span class="icon-edit_3 edit-style cour-icon-edit"></span>
+                        </div>
+                        <div class="address-info__head--contacts">
+                            <h2 class="address-info__tittle--st dr3-name">Грицюк Юлия Николаевна</h2>
+                            <div class="address-info__head--phone">
+                                +38(066)543-00-00
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address-info address-centring address-info__container1 cargo-cont-mob">
+                        <div class="waybill-area__info cargo-head-bg cour-lh">
+                            Получатель
+                            <span class="icon-magnifier_3 edit-style cour-icon-edit"></span>
+                        </div>
+                        <div class="b-input"><input type="text" class="search-receiver" placeholder="Поиск получателя"/></div>
+                    </div>
+                    <div class="address-info address-centring address-info__container1 cargo-cont-mob">
+                        <div class="waybill-area__info cargo-head-bg cour-lh">
+                            Адрес отправки
+                            <span class="icon-trash_3 edit-style cour-icon-edit"></span>
+                        </div>
+
+
+                        <div class="address-info__head head-brd-n">
+                            <div class="office-adr">
+                                <span class="icon-department_2 adr-style"></span>
+                                <span class="adr-loc">Отделение</span>
+                            </div>
+                            <div class="home-adr">
+                                <span class="icon-door_2 adr-style"></span>
+                                <span class="adr-loc">От двери</span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="address-info__head head-brd-n chosen-address">
+                            <div class="address-info__head--icon">
+                                <span class="icon-door_2 dep_2-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts contact-pln">
+                                <div class="address-info__tittle--style titl-pb">
+                                    Гомель
+                                </div>
+                                <p class="sending-form__text">
+                                    пр. Ленина 93, кв. 10
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="address-info address-centring address-info__container1 cargo-cont-mob">
+                        <div class="waybill-area__info cargo-head-bg cour-lh">
+                            Адрес доставки
+                            <span class="icon-trash_3 edit-style cour-icon-edit"></span>
+                        </div>
+
+
+                        <div class="address-info__head head-brd-n">
+                            <div class="office-adr">
+                                <span class="icon-department_2 adr-style"></span>
+                                <span class="adr-loc">Отделение</span>
+                            </div>
+                            <div class="home-adr">
+                                <span class="icon-door_2 adr-style"></span>
+                                <span class="adr-loc">От двери</span>
+                            </div>
+                        </div>
+
+
+                        <div class="address-info__head head-brd-n chosen-address">
+                            <div class="address-info__head--icon">
+                                <span class="icon-door_2 dep_2-style"></span>
+                            </div>
+                            <div class="address-info__head--contacts contact-pln">
+                                <div class="address-info__tittle--style titl-pb">
+                                    Минск
+                                </div>
+                                <p class="sending-form__text">
+                                    пр. Партизанский 26, кв. 101
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wr address-centring cargo-places">
+                        <div class="contact-pln cargo-pl-goods">
+                            <div class="cargo-head-bg address-info__head">
+                                <div class="waybill-area__info">
+                                    Грузовые места
+                                    <span class="del-block__head--txt2 del-block__head--txt2-color" id="track-cargo-pl">2</span>
+                                </div>
+                                <div class="waybill-area__info--cargo posit">
+                                    Вес: <span class="cargo-weight">90 кг.</span>
+                                </div>
+                                <div class="waybill-area__info--cargo contact-pln">
+                                    Оглашенная стоимость: <span class="cargo-weight">240 000 руб.</span>
+                                </div>
+                            </div>
+                            <div class="cargo-goods-wrap">
+                                <div class="cargo-goods">
+                                    <div class="cargo-goods__name">
+                                        <span class="icon-box_2 map_2-style box-icon-style"></span>
+                                        <p class="cargo-form__text cargo-form__text--pb">Холодильник</p>
+                                        <p class="cargo-form__text"><span class="icon-dollar_4 cgn-icon cgn-icon-dol"></span>120 000 руб.</p>
+                                        <p class="cargo-form__text"><span class="icon-size_4 cgn-icon"></span>
+                                            88 х 67 х 40 / 45 кг.</p>
+                                    </div>
+                                    <div class="cargo-goods__name">
+                                        <span class="icon-box_2 map_2-style box-icon-style"></span>
+                                        <p class="cargo-form__text cargo-form__text--pb">Холодильник</p>
+                                        <p class="cargo-form__text"><span class="icon-dollar_4 cgn-icon cgn-icon-dol"></span>120 000 руб.</p>
+                                        <p class="cargo-form__text"><span class="icon-size_4 cgn-icon"></span>
+                                            88 х 67 х 40 / 45 кг.</p>
+                                    </div>
+                                    <div class="cargo-goods__name">
+                                        <span class="icon-box_2 map_2-style box-icon-style"></span>
+                                        <p class="cargo-form__text cargo-form__text--pb">Холодильник</p>
+                                        <p class="cargo-form__text"><span class="icon-dollar_4 cgn-icon cgn-icon-dol"></span>120 000 руб.</p>
+                                        <p class="cargo-form__text"><span class="icon-size_4 cgn-icon"></span>
+                                            88 х 67 х 40 / 45 кг.</p>
+                                    </div>
+                                    <div class="cargo-goods__name">
+                                        <span class="icon-box_2 map_2-style box-icon-style"></span>
+                                        <p class="cargo-form__text cargo-form__text--pb">Холодильник</p>
+                                        <p class="cargo-form__text"><span class="icon-dollar_4 cgn-icon cgn-icon-dol"></span>120 000 руб.</p>
+                                        <p class="cargo-form__text"><span class="icon-size_4 cgn-icon"></span>
+                                            88 х 67 х 40 / 45 кг.</p>
+                                    </div>
+                                    <div class="cargo-goods__name">
+                                        <span class="icon-box_2 map_2-style box-icon-style"></span>
+                                        <p class="cargo-form__text cargo-form__text--pb">Холодильник</p>
+                                        <p class="cargo-form__text"><span class="icon-dollar_4 cgn-icon cgn-icon-dol"></span>120 000 руб.</p>
+                                        <p class="cargo-form__text"><span class="icon-size_4 cgn-icon"></span>
+                                            88 х 67 х 40 / 45 кг.</p>
+                                    </div>
+                                    <div class="cargo-goods__name cargo-adding">
+                                        <span class="icon-box_2 map_2-style box-icon-style"></span>
+                                        <p class="cargo-form__text cargo-form__text--pb">Грузовое место</p>
+                                        <span class="icon-plus_2 plus-cargoplace-style"></span>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="c-footer">
+                                <div class="cargo-goods__footer">
+                                    Сумма: <span class="cargo-goods__total">12 000руб.</span>
+                                </div>
+                                <div class="cargo-user-sel">
+                                    <select class="b-select" name="" id="">
+                                        <option value="s1">Плательщик</option>
+                                        <option value="s1">Текст</option>
+                                        <option value="s1">Текст</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="address-info__container1 contact-pln address-centring service-places">
+                        <div class="cargo-head-bg cargo-head-brd address-info__head">
+                            <div class="waybill-area__info cargo-serv-lh">
+                                Обратные услуги
+                            </div>
+                        </div>
+                        <div class="adding1">
+                            <div class="services-start back-services-brl">
+                                <span class="icon-refresh_2 map_2-style box-icon-style"></span>
+                                <p class="cargo-form__text cargo-form__text--pb">Наложенный платеж</p>
+                                <span class="icon-plus_2 plus-cargoplace-style"></span>
+                            </div>
+
+                            <div class="services-add">
+                                <span class="icon-refresh_2 map_2-style box-icon-style back-services-brl"></span>
+                                <p class="cargo-form__text cargo-form__text--pb back-services-brl">Наложенный платеж</p>
+                                <div class="b-input back-services-brl"><input type="text" class="adding-input" placeholder="Сума платежа, руб."/></div>
+                                <div class="cargo-add-sel">
+                                    <select class="b-select" name="" id="">
+                                        <option value="s1">Плательщик</option>
+                                        <option value="s1">Текст</option>
+                                        <option value="s1">Текст</option>
+                                    </select>
+                                </div>
+                                <div class="add-cargo-btns">
+                                    <div class="btn-ok">
+                                        <div class="b-button-red b-add-st b-add-st-brd"><span class="b-button-red__ttl btn-fs">ОК</span></div>
+                                    </div>
+                                    <div class="btn-cancel">
+                                        <div class="b-button-red b-add-st"><span class="b-button-gray__ttl btn-fs">Отмена</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="back-services back-services-brl">
+                                <span class="icon-trash_3 serv-ic-style"></span>
+                                <span class="icon-edit_3 serv-ic-style"></span>
+                                <span class="icon-refresh_2 map_2-style box-icon-style"></span>
+                                <p class="cargo-form__text cargo-form__text--pb">Наложенный платеж</p>
+                                <span class="sending-form__text-sr cargo-txt-cor">Сумма платежа</span>
+                                <span class="cargo-serv-txt">15 000 руб.</span>
+                                <div class="cargo-tot-cost">Сумма <span class="cargo-tcn">1200 руб.</span></div>
+                                <div class="cargo-tot-cost">Плательщик <span class="cargo-tcn">Получатель</span></div>
+                            </div>
+
+                        </div>
+                        <div class="adding2">
+                            <div class="services-start">
+                                <span class="icon-undo_2 map_2-style box-icon-style"></span>
+                                <p class="cargo-form__text cargo-form__text--pb">Обратная доставка тары</p>
+                                <span class="icon-plus_2 plus-cargoplace-style"></span>
+                            </div>
+
+                            <div class="services-add">
+                                <span class="icon-undo_2 map_2-style box-icon-style"></span>
+                                <p class="cargo-form__text cargo-form__text--pb">Обратная доставка тары</p>
+                                <div class="b-input"><input type="text" class="adding-input" placeholder="Что возвращается"/></div>
+                                <div class="cargo-add-sel">
+                                    <select class="b-select" name="" id="">
+                                        <option value="s1">Плательщик</option>
+                                        <option value="s1">Текст</option>
+                                        <option value="s1">Текст</option>
+                                    </select>
+                                </div>
+                                <div class="add-cargo-btns">
+                                    <div class="btn-ok">
+                                        <div class="b-button-red b-add-st b-add-st-brd"><span class="b-button-red__ttl btn-fs">ОК</span></div>
+                                    </div>
+                                    <div class="btn-cancel">
+                                        <div class="b-button-red b-add-st"><span class="b-button-gray__ttl btn-fs">Отмена</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="back-services">
+                                <span class="icon-trash_3 serv-ic-style"></span>
+                                <span class="icon-edit_3 serv-ic-style"></span>
+                                <span class="icon-undo_2 map_2-style box-icon-style"></span>
+                                <p class="cargo-form__text cargo-form__text--pb">Обратная доставка тары</p>
+                                <span class="sending-form__text-sr cargo-txt-cor">Тип тары</span>
+                                <span class="cargo-serv-txt">Тубус</span>
+                                <div class="cargo-tot-cost back-services-brl">Сумма <span class="cargo-tcn">1200 руб.</span></div>
+                                <div class="cargo-tot-cost back-services-brl">Плательщик <span class="cargo-tcn">Получатель</span></div>
+                            </div>
+
+                        </div>
+                        <div class="adding3">
+                            <div class="services-start">
+                                <span class="icon-checked_2 map_2-style box-icon-style"></span>
+                                <p class="cargo-form__text cargo-form__text--pb">Подтверждение получения</p>
+                                <span class="icon-plus_2 plus-cargoplace-style"></span>
+                            </div>
+
+                            <div class="services-add">
+                                <span class="icon-checked_2 map_2-style box-icon-style"></span>
+                                <p class="cargo-form__text cargo-form__text--pb">Подтверждение получения</p>
+                                <div class="wrap-accept">
+                                    <span class="sending-form__text-sr tal">Вид подтверждения</span>
+                                    <span class="addingcarg-txt tal">Письменный документ</span>
+                                </div>
+                                <div class="cargo-add-sel">
+                                    <select class="b-select" name="" id="">
+                                        <option value="s1">Плательщик</option>
+                                        <option value="s1">Текст</option>
+                                        <option value="s1">Текст</option>
+                                    </select>
+                                </div>
+                                <div class="add-cargo-btns">
+                                    <div class="btn-ok">
+                                        <div class="b-button-red b-add-st b-add-st-brd"><span class="b-button-red__ttl btn-fs">ОК</span></div>
+                                    </div>
+                                    <div class="btn-cancel">
+                                        <div class="b-button-red b-add-st"><span class="b-button-gray__ttl btn-fs">Отмена</span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="back-services">
+                                <span class="icon-trash_3 serv-ic-style"></span>
+                                <span class="icon-edit_3 serv-ic-style"></span>
+                                <span class="icon-checked_2 map_2-style box-icon-style"></span>
+                                <p class="cargo-form__text cargo-form__text--pb">Подтверждение получения</p>
+                                <span class="sending-form__text-sr cargo-txt-cor">Вид подтверждения</span>
+                                <span class="cargo-serv-txt">Письменный документ</span>
+                                <div class="cargo-tot-cost back-services-brl">Сумма <span class="cargo-tcn">1200 руб.</span></div>
+                                <div class="cargo-tot-cost back-services-brl">Плательщик <span class="cargo-tcn">Получатель</span></div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="draft-btns address-centring">
+                        <div class="dashboard__btns-l">
+                            <div class="b-button-red"><span class="b-button-red__ttl draft-btn__f">Отправить заявку</span></div>
+                        </div>
+                        <div class="dashboard__btns-r">
+                            <div class="b-button-gray"><span class="b-button-gray__ttl">Отмена</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer footer-img">
+            <div class="body-layout">
+                <div class="footer-l">
+                    <div class="footer-top">
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Компания</h3></li>
+                            <!--<li class="footer__item"><a class="footer__item-link" href="#">О компании</a></li>-->
+                            <li class="footer__item"><a class="footer__item-link" href="#">Контакты</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Вакансии</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Отзывы</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Частным клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как отправить посылку</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Бизнес-клиентам</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Услуги</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Преимущества</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Как стать нашим клиентом</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Плюсы регистрации</a></li>
+                        </ul>
+                        <ul class="footer__list">
+                            <li class="footer__item"><h3 class="footer__item-ttl">Работа с нами on-line</h3></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Тracking</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Поиск отделений</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Калькулятор</a></li>
+                            <li class="footer__item"><a class="footer__item-link" href="#">Мобильное приложение</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-bottom clearfix">
+                        <div class="footer-bottom-l clearfix">
+                            <div class="footer-logo"><a href="/"><img src="img/design/logo.png" width="41" height="59" alt=""/></a></div>
+                            <div class="footer-bottom-l__dsc">
+                                <p>
+                                    <strong>ООО “ Наша почта”</strong><br>
+                                    012345, г. Минск,<br>
+                                    ул. (ххх) ххх хх хх<br>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="footer-bottom-r clearfix">
+                            <div class="footer-bottom-r__dsc">
+                                <p>
+                                    <strong>Поддержка клиентов</strong><br>
+                                    тел.: (ххх) ххх хх хх<br>
+                                    e-mail: nasha_pocta@xxx.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-r">
+                    <div class="feedback">
+                        <form action="">
+                            <h3 class="feedback__ttl">Обратная связь</h3>
+                            <div class="feedback__row feedback__row--first">
+                                <div class="b-input"><input type="text" placeholder="Имя"/></div>
+                                <div class="b-input"><input type="text" placeholder="Телефон"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><input type="text" placeholder="Тема"/></div>
+                            </div>
+                            <div class="feedback__row">
+                                <div class="b-input"><textarea name="" placeholder="Текст"></textarea></div>
+                            </div>
+                             <div class="feedback__btn"><button type="submit" class="feedback__btn-ttl">Отправить</button></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<div class="popup">
+    <div class="popup__bg"></div>
+    <div class="popup__box">
+        <div class="popup__close"><span class="icon icon-cross_3"></span></div>
+        <h2 class="popup__ttl">Адрес</h2>
+        <div class="popup__ttl-line"></div>
+        <div class="popup__form">
+            <div class="popup__form-row">
+                <div class="popup__form-col">
+                    <div class="b-input-search"><input type="text" placeholder="Адрес"><span class="icon icon-magnifier_2"></span><span class="icon icon-home_2"></span></div>
+                </div>
+            </div>
+            <div class="popup__form-row popup__form-row--triple">
+                <div class="popup__form-col">
+                    <div class="b-input"><input type="text" placeholder="Кв./Оф."/></div>
+                </div>
+                <div class="popup__form-col">
+                    <div class="b-input"><input type="text" placeholder="Корпус"/></div>
+                </div>
+                <div class="popup__form-col">
+                    <div class="b-input"><input type="text" placeholder="Комната"/></div>
+                </div>
+            </div>
+            <div class="popup__switcher">
+                <div class="popup__switcher-box active">
+                    <span class="icon icon-home_2"></span>
+                    <p class="popup__switcher-ttl">Основной адрес</p>
+                </div>
+                <div class="popup__switcher-box">
+                    <span class="icon icon-geoloc_2"></span>
+                    <p class="popup__switcher-ttl">Адрес доставки</p>
+                </div>
+            </div>
+            <div class="popup__btns">
+                <div class="b-button-gray"><span class="b-button-gray__ttl">Сохранить</span></div>
+                <div class="b-button-gray"><span class="b-button-gray__ttl">Отмена</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup__cargo">
+    <div class="popup__bg"></div>
+    <div class="popup__box">
+        <div class="popup__close"><span class="icon icon-cross_3"></span></div>
+        <h2 class="popup__ttl">Добавление грузового места</h2>
+        <div class="popup__ttl-line"></div>
+        <div class="popup__form">
+            <div class="popup__form-row">
+                <div class="popup__form-col popup__cargo--name">
+                    <span class="popup__form--txt">Название</span>
+                    <div class="b-input"><input type="text"></div>
+                </div>
+                <div class="popup__form-col popup__cargo--name">
+                    <span class="popup__form--txt">Оглашенная стоимость, руб</span>
+                    <div class="b-input"><input type="text"></div>
+                </div>
+            </div>
+            <div class="popup__form-row-size ">
+                <div class="popup__form-col popup__cargo--size">
+                    <span class="popup__form--txt">Высота, см</span>
+                    <div class="b-input choose__size"><input type="text">
+                        <div class="trigUp"></div>
+                        <div class="trigDown"></div>
+                    </div>
+                </div>
+                <div class="popup__form-col popup__cargo--size">
+                    <span class="popup__form--txt">Ширина, см</span>
+                    <div class="b-input choose__size"><input type="text">
+                        <div class="trigUp"></div>
+                        <div class="trigDown"></div>
+                    </div>
+                </div>
+                <div class="popup__form-col popup__cargo--size">
+                    <span class="popup__form--txt">Длина, см</span>
+                    <div class="b-input choose__size"><input type="text">
+                        <div class="trigUp"></div>
+                        <div class="trigDown"></div>
+                    </div>
+                </div>
+                <div class="popup__form-col popup__cargo--size">
+                    <span class="popup__form--txt">Вес, кг</span>
+                    <div class="b-input choose__size"><input type="text">
+                        <div class="trigUp"></div>
+                        <div class="trigDown"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup__btns">
+                <div class="b-button-gray"><span class="b-button-gray__ttl">Сохранить</span></div>
+                <div class="b-button-gray"><span class="b-button-gray__ttl">Отмена</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.cour-lh').mouseover(function() {
+            $('.edit-style', this).show();
+        });
+        $('.cour-lh').mouseout(function() {
+            $('.edit-style', this).hide();
+        });
+
+        // select2
+        $('.b-select').select2({
+            placeholder: "Плательщик",
+            width: "100%"
+        });
+
+        //scrollBar
+
+        $(window).load(function(){
+            $(".wr").mCustomScrollbar({
+                axis: "x",
+                theme: "dark-3",
+                autoHideScrollbar: true,
+            });
+
+            $(function () {
+                var shag = Math.max.apply(Math, $(".cargo-goods-wrap .cargo-goods__name").map(function () {
+                    return $(this).outerWidth(true);
+                }).get());
+                $(".cargo-goods-wrap").mCustomScrollbar({
+                    axis: "x",
+                    theme: "dark-3",
+                    mouseWheel:{
+                        scrollAmount:"300"
+                    },
+                    advanced: {
+                        autoExpandHorizontalScroll: true,
+                        updateOnBrowserResize:true,
+                        updateOnContentResize:true
+                    },
+                    scrollButtons: {
+                        enable: true,
+                        scrollType: "stepped"
+                    },
+                    keyboard: {scrollType: "stepped"},
+                    snapAmount: shag,
+                    mouseWheel: {scrollAmount: shag},
+                    autoHideScrollbar: true
+                });
+            });
+        });
+
+        $(window).on('resize', function() {
+            var ww = $(window).width();
+            var blw = $('.wr').width();
+            if (ww <= 876) {
+                $('.cargo-pl-goods').width(876);
+            } else {
+                $('.cargo-pl-goods').width(blw);
+            }
+        });
+        if ($(window).width() <= 876) {
+            $(window).load(function() {
+                $('.cargo-pl-goods').width(876);
+            });
+        };
+
+        $(window).load(function() {
+            var cItems = $('.cargo-goods__name').length * 184;
+            $('.cargo-goods').width(cItems);
+        });
+
+
+        //cargo number of places
+
+        var n = $('.cargo-goods__name').length;
+        $('#track-cargo-pl').text(n);
+
+        // cargo clicking
+
+        $('.services-start .plus-cargoplace-style').on('click', function(){
+            $(this).parent('.services-start').hide().siblings('.services-add').show();
+        });
+        $('.services-add .btn-cancel').on('click', function() {
+            $(this).closest('.services-add').hide().siblings('.services-start').show();
+        });
+        $('.services-add .btn-ok').on('click', function() {
+            $(this).closest('.services-add').hide().siblings('.back-services').show();
+        });
+        $('.back-services').mouseover(function() {
+            $('.serv-ic-style', this).show();
+        });
+        $('.back-services').mouseout(function() {
+            $('.serv-ic-style', this).hide();
+        });
+
+
+        //popup adding cargo
+
+        $('.cargo-adding').on('click', function() {
+           $('.popup__cargo').show();
+        });
+
+        // popup size choose
+
+        $('.trigDown').click(function () {
+            var $input = $(this).parent().find('input');
+            var count = parseInt($input.val()) - 1;
+            count = count < 1 ? 1 : count;
+            $input.val(count);
+            $input.change();
+            return false;
+        });
+        $('.trigUp').click(function () {
+            var $input = $(this).parent().find('input');
+            $input.val(parseInt($input.val()) + 1);
+            $input.change();
+            return false;
+        });
+
+
+
+    });
+</script>
+</body>
+</html>
