@@ -1200,16 +1200,16 @@ yx-axis
 /* theme "dark-3" */
 .mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   background-color: #000;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: #c9cacb;
 }
 .mCS-dark-3.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
   background-color: #000;
-  background-color: rgba(0, 0, 0, 0.85);
+  background-color: #c9cacb;
 }
 .mCS-dark-3.mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar,
 .mCS-dark-3.mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar {
   background-color: #000;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #c9cacb;
 }
 .mCS-dark-3.mCSB_scrollTools .mCSB_draggerRail {
   background-color: #000;

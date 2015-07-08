@@ -179,3 +179,9 @@ $('.account-type__box').on('click', function() {
 */
 
 
+// phones mask
+$("#phone").mask("+999 (99) 999-99-99");
+
+
+
+

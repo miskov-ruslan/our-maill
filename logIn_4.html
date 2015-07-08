@@ -17,8 +17,10 @@
     <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/icheck.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="/js/select2.min.js"></script>
 </head>
-<body>
+<body id="select-wr">
     <div id="wrapper" class="login4">
         <header class="header">
             <div class="body-layout">
@@ -40,14 +42,14 @@
                         <div class="type-ownership clearfix">
                             <div class="type-ownership__ttl">Форма собственности</div>
                             <div class="type-ownership__dsc">
-                                <span class="type-ownership__dsc-name">Общество с ограниченной ответственностью</span>
-                                <div class="type-ownership__dsc-arrow"><span class="arrow"></span></div>
-                                <ul class="type-ownership__dropdown">
-                                    <li class="type-ownership__dropdown-item">Общество с ограниченной ответственностью</li>
-                                    <li class="type-ownership__dropdown-item">Общество с ограни</li>
-                                    <li class="type-ownership__dropdown-item">Общество с ограниченной от</li>
-                                    <li class="type-ownership__dropdown-item">Общество с огра</li>
-                                </ul>
+                                <!--<span class="type-ownership__dsc-name">Общество с ограниченной ответственностью</span>-->
+                                <!--<div class="type-ownership__dsc-arrow"><span class="arrow"></span></div>-->
+                                <select class="type-ownership__dropdown dd_select">
+                                    <option value="1" class="type-ownership__dropdown-item">Общество с ограниченной ответственностью</option>
+                                    <option value="2" class="type-ownership__dropdown-item">Общество с ограни</option>
+                                    <option value="3" class="type-ownership__dropdown-item">Общество с ограниченной от</option>
+                                    <option value="4" class="type-ownership__dropdown-item">Общество с огра</option>
+                                </select>
                             </div>
                         </div>
                         <div class="login-form__row">
@@ -71,7 +73,7 @@
                         <div class="login-form__row">
                             <div class="login-form__col">
                                 <div class="login-form__dsc">Телефон</div>
-                                <div class="b-input"><input type="text"/></div>
+                                <div class="b-input"><input id="phone" type="text" placeholder="+___ (__) ___-__-__" /></div>
                             </div>
                         </div>
                         <div class="login-form__row">
@@ -112,21 +114,9 @@
             // checkbox (iCheck)
             $('.b-checkbox input').iCheck();
 
-            // type-ownership__dropdown
-            $('.type-ownership__dsc').click(function() {
-                if($('.type-ownership__dropdown').is(':hidden')) {
-                    $('.type-ownership__dsc').addClass('active');
-                    $('.type-ownership__dropdown').slideDown();
-                } else {
-                    $('.type-ownership__dropdown').slideUp(function() {
-                        $('.type-ownership__dsc').removeClass('active');
-                    });
-                }
+            $(".dd_select").select2({
+                width: "100%"
             });
-            $('.type-ownership__dropdown-item').click(function() {
-                $('.type-ownership__dsc-name').text($(this).text());
-            });
-
 
         });
     </script>

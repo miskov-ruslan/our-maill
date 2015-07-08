@@ -163,6 +163,9 @@
     margin-left: auto !important;
     margin-right: auto !important;
   }
+  .login6 .login-box__left .login-box__img {
+    right: -77px;
+  }
   .input-size {
     width: 90%;
   }
@@ -195,6 +198,15 @@
   }
   .delivery-route__name:last-child {
     left: 3.5%;
+  }
+}
+@media screen and (max-width: 1334px) {
+  .login-box__l-bg {
+    background-size: 945px 556px !important;
+    background-position: 94px bottom !important;
+  }
+  .login3 .login-box__img-dsc {
+    font-size: 29px;
   }
 }
 @media screen and (max-width: 1454px) {
@@ -696,14 +708,6 @@
   .my-partners,
   .call-c {
     margin-left: 0;
-  }
-  .cargo-cont-mob:nth-child(3) {
-    width: 51% !important;
-    margin-right: 0 !important;
-  }
-  .cargo-cont-mob:nth-child(5) {
-    width: 51% !important;
-    margin-right: 0 !important;
   }
   .cargo-places,
   .service-places {
@@ -1761,7 +1765,7 @@
   .head-calc-total {
     padding-top: 5px;
   }
-  .package-types__choose {
+  .package-types__choose a {
     font-size: 16px;
   }
   .reviews__box-text {
@@ -2091,6 +2095,43 @@
   .dashboard__btns-l {
     margin: 0 0 10px 0 !important;
   }
+  .account-type__box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .login .account-type__box .icon {
+    width: 62px;
+    height: 62px;
+    font-size: 55px;
+  }
+  .login .account-type__box-dsc {
+    margin: 0 0 0 14px;
+    max-width: auto;
+  }
+  .already-reg {
+    display: none;
+  }
+  .login .already-reg__ttl {
+    padding-top: 0;
+  }
+  .login6 .login-box__ttl {
+    font-size: 18px;
+  }
+  .login7 .login-form__row--captcha {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .login7 .login-form__row--captcha .login-form__col:last-child {
+    width: 100%;
+  }
+  .login7 .login-form__row--captcha .login-form__col:first-child {
+    margin: 0 0 3px;
+  }
   .calc-del-cost {
     font-size: 13px;
   }
@@ -2279,7 +2320,7 @@
     line-height: 8px;
     padding: 10px 0;
   }
-  .package-types__choose {
+  .package-types__choose a {
     font-size: 13px;
   }
 }
